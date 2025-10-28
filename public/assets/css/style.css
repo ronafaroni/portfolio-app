@@ -7359,7 +7359,11 @@ h6,
     transition: 0.4s;
 }
 .blog-item:hover {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+}
+.blog-item:hover .details-btn {
+    color: var(--black-color);
+    background: var(--primary-color);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .blog-item {

@@ -378,7 +378,6 @@
     </section>
     <!-- Skill Area end -->
 
-
     <!-- Projects Area start -->
     <section id="portfolio" class="projects-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div class="container">
@@ -390,77 +389,121 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center pb-25">
-                <div class="col-lg-6">
-                    <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="{{ asset('/assets/images/projects/project1.jpg') }}" alt="Project">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-standard-wrap">
+                        <div class="row">
+                            <div class="col-md-4 item">
+                                <div class="blog-item style-two wow fadeInUp delay-0-3s">
+                                    <div class="image">
+                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                    </div>
+                                    <div class="content">
+                                        <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
+                                                Participants</a></h5>
+                                        <hr>
+                                        <div class="tag-coulds">
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item">
+                                <div class="blog-item style-two wow fadeInUp delay-0-4s">
+                                    <div class="image">
+                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                    </div>
+                                    <div class="content">
+                                        <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
+                                                Participants</a></h5>
+                                        <hr>
+                                        <div class="tag-coulds">
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item">
+                                <div class="blog-item style-two wow fadeInUp delay-0-5s">
+                                    <div class="image">
+                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                    </div>
+                                    <div class="content">
+                                        <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
+                                                Participants</a></h5>
+                                        <hr>
+                                        <div class="tag-coulds">
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item">
+                                <div class="blog-item style-two wow fadeInUp delay-0-3s">
+                                    <div class="image">
+                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                    </div>
+                                    <div class="content">
+                                        <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
+                                                Participants</a></h5>
+                                        <hr>
+                                        <div class="tag-coulds">
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item">
+                                <div class="blog-item style-two wow fadeInUp delay-0-4s">
+                                    <div class="image">
+                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                    </div>
+                                    <div class="content">
+                                        <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
+                                                Participants</a></h5>
+                                        <hr>
+                                        <div class="tag-coulds">
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item">
+                                <div class="blog-item style-two wow fadeInUp delay-0-5s">
+                                    <div class="image">
+                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                    </div>
+                                    <div class="content">
+                                        <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
+                                                Participants</a></h5>
+                                        <hr>
+                                        <div class="tag-coulds">
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                            <a class="tag btn-sm" href="blog.html">Design</a>
+                                            <a class="tag btn-sm" href="blog.html">Figma</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-6">
-                    <div class="project-content wow fadeInRight delay-0-2s">
-                        <span class="sub-title">Product Design</span>
-                        <h2><a href="{{ route('projectDetails') }}">Mobile Application Design</a></h2>
-                        <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto
-                            beatae</p>
-                        <a href="{{ route('projectDetails') }}" class="details-btn"><i
-                                class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center pb-25">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="{{ asset('/assets/images/projects/project2.jpg') }}" alt="Project">
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-6 ms-auto">
-                    <div class="project-content wow fadeInRight delay-0-2s">
-                        <span class="sub-title">Product Design</span>
-                        <h2><a href="{{ route('projectDetails') }}">Website Makeup Design</a></h2>
-                        <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto
-                            beatae</p>
-                        <a href="{{ route('projectDetails') }}" class="details-btn"><i
-                                class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center pb-25">
-                <div class="col-lg-6">
-                    <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="{{ asset('/assets/images/projects/project3.jpg') }}" alt="Project">
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-6">
-                    <div class="project-content wow fadeInRight delay-0-2s">
-                        <span class="sub-title">Product Design</span>
-                        <h2><a href="{{ route('projectDetails') }}">Brand Identity and Motion Design</a></h2>
-                        <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto
-                            beatae</p>
-                        <a href="{{ route('projectDetails') }}" class="details-btn"><i
-                                class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center pb-25">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="{{ asset('/assets/images/projects/project4.jpg') }}" alt="Project">
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-6 ms-auto">
-                    <div class="project-content wow fadeInRight delay-0-2s">
-                        <span class="sub-title">Product Design</span>
-                        <h2><a href="{{ route('projectDetails') }}">Mobile Application Development</a></h2>
-                        <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto
-                            beatae</p>
-                        <a href="{{ route('projectDetails') }}" class="details-btn"><i
-                                class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-btn text-center wow fadeInUp delay-0-2s">
-                <a href="{{ route('projects') }}" class="theme-btn">View More Projects <i
-                        class="far fa-angle-right"></i></a>
             </div>
         </div>
         <div class="bg-lines">
@@ -473,6 +516,230 @@
     </section>
     <!-- Projects Area end -->
 
+    <!-- SLIDER ATAS - BERGERAK KE KANAN -->
+    <div class="tools-slideshow mt-50" style="overflow:hidden;position:relative;">
+        <div class="slider slider-right">
+            <div class="slide-track">
+                <!-- isi asli -->
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-2ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-3ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-4ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-5ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-6ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-7ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-8ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-9ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDER BAWAH - BERGERAK KE KIRI -->
+    <div class="tools-slideshow mt-30" style="overflow:hidden;position:relative;">
+        <div class="slider slider-left">
+            <div class="slide-track">
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-2ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-3ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-4ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-5ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-6ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-7ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-8ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item design marketing graphics">
+                    <div class="project-item style-three wow fadeInUp delay-0-9ms animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
+                            <span class="sub-title">Product Design</span>
+                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Testimonial Area start -->
     {{-- <section class="testimonials-area rel z-1">

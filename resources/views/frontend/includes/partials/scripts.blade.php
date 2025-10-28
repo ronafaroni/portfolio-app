@@ -27,6 +27,10 @@
 <script src="{{ asset('/assets/js/form-validator.min.js') }}"></script>
 <script src="{{ asset('/assets/js/contact-form-script.js') }}"></script>
 
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
 <script>
     // Pilih semua link di navbar
     const navLinks = document.querySelectorAll('nav a[href^="#"]');

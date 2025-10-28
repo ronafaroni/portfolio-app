@@ -23,3 +23,68 @@
 <link rel="stylesheet" href="{{ asset('/assets/css/slick.min.css') }}">
 <!-- Main Style -->
 <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+<style>
+    .tools-slideshow {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider {
+        display: flex;
+        align-items: center;
+    }
+
+    .slide-track {
+        display: flex;
+        width: max-content;
+        gap: 16px;
+    }
+
+    .item {
+        flex: 0 0 25%;
+    }
+
+    .item img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+    }
+
+    /* ANIMASI TANPA PUTUS */
+    .slider-right .slide-track {
+        animation: scrollRight 20s linear infinite;
+    }
+
+    .slider-left .slide-track {
+        animation: scrollLeft 20s linear infinite;
+    }
+
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes scrollRight {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    /* Saat hover, animasi berhenti */
+    .slide-track:hover {
+        animation-play-state: paused;
+    }
+</style>
