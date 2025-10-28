@@ -325,7 +325,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-5s">
-                                        <img src="{{ asset('/assets/images/skills/skill4.png') }}" alt="Skill">
+                                        <img src="{{ asset('/assets/images/skills/wordpress.png') }}" alt="Skill">
                                         <h5>Wordpress</h5>
                                         <span class="percent">74%</span>
                                     </div>
