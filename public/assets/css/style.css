@@ -6523,15 +6523,15 @@ h6,
         left top,
         left bottom,
         from(rgba(201, 243, 29, 0)),
-        to(#c9f31d)
+        to(#06928c)
     );
     background: -webkit-linear-gradient(
         top,
         rgba(201, 243, 29, 0) 0%,
-        #c9f31d 100%
+        #06928c 100%
     );
-    background: -o-linear-gradient(top, rgba(201, 243, 29, 0) 0%, #c9f31d 100%);
-    background: linear-gradient(180deg, rgba(201, 243, 29, 0) 0%, #c9f31d 100%);
+    background: -o-linear-gradient(top, rgba(201, 243, 29, 0) 0%, #06928c 100%);
+    background: linear-gradient(180deg, rgba(201, 243, 29, 0) 0%, #06928c 100%);
 }
 .project-item.style-three .project-image {
     margin-bottom: 0;
