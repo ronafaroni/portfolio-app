@@ -528,9 +528,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -541,9 +541,7 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -554,9 +552,7 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -567,9 +563,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -580,9 +576,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -593,9 +589,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -606,9 +602,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -619,9 +615,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -640,9 +636,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -653,9 +649,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -666,9 +662,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -679,9 +675,7 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -692,9 +686,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -705,9 +699,9 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+
+
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -718,9 +712,7 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
@@ -731,9 +723,7 @@
                             <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
-                            <a href="project-details.html" class="project-btn"><i class="far fa-arrow-right"></i></a>
-                            <span class="sub-title">Product Design</span>
-                            <h4><a href="project-details.html">Mobile Application Design</a></h4>
+                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
                         </div>
                     </div>
                 </div>
