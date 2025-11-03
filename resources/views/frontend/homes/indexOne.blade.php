@@ -249,7 +249,7 @@
                     <div class="service-item wow fadeInUp delay-0-2s">
                         <div class="number">05.</div>
                         <div class="content">
-                            <h4>Business Management Systems</h4>
+                            <h4>Business Management System</h4>
                             <p>Automate operations with custom tools.</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
