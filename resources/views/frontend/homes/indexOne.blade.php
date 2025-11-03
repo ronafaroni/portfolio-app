@@ -277,7 +277,6 @@
     </section>
     <!-- Services Area end -->
 
-
     <!-- Skill Area start -->
     <section id="skills" class="skill-area rel z-1">
         <div class="for-bgc-black pt-130 rpt-100 pb-100 rpb-70">
@@ -396,7 +395,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-3s">
                                     <div class="image">
-                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -414,7 +413,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-4s">
                                     <div class="image">
-                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -432,7 +431,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-5s">
                                     <div class="image">
-                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -450,7 +449,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-3s">
                                     <div class="image">
-                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -468,7 +467,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-4s">
                                     <div class="image">
-                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -486,7 +485,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-5s">
                                     <div class="image">
-                                        <img src="assets/images/blog/blog-standard1.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -517,7 +516,7 @@
     <!-- Projects Area end -->
 
     <!-- SLIDER ATAS - BERGERAK KE KANAN -->
-    <div class="tools-slideshow mt-50" style="overflow:hidden;position:relative;">
+    {{-- <div class="tools-slideshow mt-50" style="overflow:hidden;position:relative;">
         <div class="slider slider-right">
             <div class="slide-track">
                 <!-- isi asli -->
@@ -623,10 +622,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- SLIDER BAWAH - BERGERAK KE KIRI -->
-    <div class="tools-slideshow mt-30" style="overflow:hidden;position:relative;">
+    {{-- <div class="tools-slideshow mt-30" style="overflow:hidden;position:relative;">
         <div class="slider slider-left">
             <div class="slide-track">
                 <div class="col-md-3 item design marketing graphics">
@@ -729,174 +728,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
-    <!-- Testimonial Area start -->
-    {{-- <section class="testimonials-area rel z-1">
-        <div class="for-bgc-black py-130 rpy-100">
-            <div class="container">
-                <div class="row gap-90">
-                    <div class="col-lg-4">
-                        <div class="testimonials-content-part rel z-2 rmb-55 wow fadeInUp delay-0-2s">
-                            <div class="section-title mb-40">
-                                <span class="sub-title mb-15">Clients Testimonials</span>
-                                <h2>I’ve 1253+ Clients <span>Feedback</span></h2>
-                                <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis</p>
-                            </div>
-                            <div class="slider-arrows">
-                                <button class="testimonial-prev"><i class="fal fa-arrow-left"></i></button>
-                                <button class="testimonial-next"><i class="fal fa-arrow-right"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="testimonials-wrap">
-                            <div class="testimonial-item wow fadeInUp delay-0-3s">
-                                <div class="author">
-                                    <img src="{{ asset('/assets/images/testimonials/author1.png') }}" alt="Author">
-                                </div>
-                                <div class="text">At vero eoset accusamus et iusto odio dignissimos ducimus quie
-                                    blanditiis praesentium voluptatum deleniti atque corrupti dolores</div>
-                                <div class="testi-des">
-                                    <h5>Rodolfo E. Shannon</h5>
-                                    <span>CEO & Founder</span>
-                                </div>
-                            </div>
-                            <div class="testimonial-item wow fadeInUp delay-0-4s">
-                                <div class="author">
-                                    <img src="{{ asset('/assets/images/testimonials/author2.png') }}" alt="Author">
-                                </div>
-                                <div class="text">Nam libero tempore cumsoluta nobise est eligendi optio cumque nihil
-                                    impedit quominus idquod maxime placeat facere possimus</div>
-                                <div class="testi-des">
-                                    <h5>Kenneth J. Dutton</h5>
-                                    <span>Web Developer</span>
-                                </div>
-                            </div>
-                            <div class="testimonial-item wow fadeInUp delay-0-2s">
-                                <div class="author">
-                                    <img src="{{ asset('/assets/images/testimonials/author1.png') }}" alt="Author">
-                                </div>
-                                <div class="text">At vero eoset accusamus et iusto odio dignissimos ducimus quie
-                                    blanditiis praesentium voluptatum deleniti atque corrupti dolores</div>
-                                <div class="testi-des">
-                                    <h5>Rodolfo E. Shannon</h5>
-                                    <span>CEO & Founder</span>
-                                </div>
-                            </div>
-                            <div class="testimonial-item wow fadeInUp delay-0-2s">
-                                <div class="author">
-                                    <img src="{{ asset('/assets/images/testimonials/author2.png') }}" alt="Author">
-                                </div>
-                                <div class="text">Nam libero tempore cumsoluta nobise est eligendi optio cumque nihil
-                                    impedit quominus idquod maxime placeat facere possimus</div>
-                                <div class="testi-des">
-                                    <h5>Kenneth J. Dutton</h5>
-                                    <span>Web Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-lines">
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-        </div>
-    </section> --}}
-    <!-- Testimonial Area end -->
-
-
-    <!-- Pricing Area start -->
-    {{-- <section class="pricing-area pt-130 rpt-100 rel z-1">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-12">
-                    <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                        <span class="sub-title mb-15">Pricing Package</span>
-                        <h2>Amazing <span>Pricing</span> For your Projects</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-item wow fadeInUp delay-0-2s">
-                        <div class="pricing-header">
-                            <h4 class="title">Basic Plan</h4>
-                            <p class="save-percent">Try Out Basic Plan Save <span>20%</span></p>
-                            <span class="price">19.95</span>
-                        </div>
-                        <div class="pricing-details">
-                            <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
-                            <ul>
-                                <li>Website Design</li>
-                                <li>Mobile Apps Design</li>
-                                <li>Product Design</li>
-                                <li class="unable">Digital Marketing</li>
-                                <li class="unable">Custom Support</li>
-                            </ul>
-                            <a href="{{ route('contact') }}" class="theme-btn">Choose Package <i
-                                    class="far fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-item wow fadeInUp delay-0-4s">
-                        <div class="pricing-header">
-                            <h4 class="title">Standard Plan</h4>
-                            <p class="save-percent">Try Out Basic Plan Save <span>35%</span></p>
-                            <span class="price">19.95</span>
-                        </div>
-                        <div class="pricing-details">
-                            <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
-                            <ul>
-                                <li>Website Design</li>
-                                <li>Mobile Apps Design</li>
-                                <li>Product Design</li>
-                                <li>Digital Marketing</li>
-                                <li>Custom Support</li>
-                            </ul>
-                            <a href="{{ route('contact') }}" class="theme-btn">Choose Package <i
-                                    class="far fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-item wow fadeInUp delay-0-6s">
-                        <div class="pricing-header">
-                            <h4 class="title">Basic Plan</h4>
-                            <p class="save-percent">Try Out Basic Plan Save <span>45%</span></p>
-                            <span class="price">19.95</span>
-                        </div>
-                        <div class="pricing-details">
-                            <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
-                            <ul>
-                                <li>Website Design</li>
-                                <li>Mobile Apps Design</li>
-                                <li>Product Design</li>
-                                <li>Digital Marketing</li>
-                                <li>Custom Support</li>
-                            </ul>
-                            <a href="{{ route('contact') }}" class="theme-btn">Choose Package <i
-                                    class="far fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-lines">
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-        </div>
-    </section> --}}
-    <!-- Pricing Area end -->
 
     <!-- FAQs Area start -->
     <section id="faqs" class="faqs-area py-130 rpy-100 rel z-1">
