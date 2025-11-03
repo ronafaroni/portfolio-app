@@ -229,7 +229,7 @@
                     <div class="service-item wow fadeInUp delay-0-2s">
                         <div class="number">03.</div>
                         <div class="content">
-                            <h4>Company Profile Websites</h4>
+                            <h4>Company Profile</h4>
                             <p>Present your brand with web identity.</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
@@ -239,7 +239,7 @@
                     <div class="service-item wow fadeInUp delay-0-4s">
                         <div class="number">04.</div>
                         <div class="content">
-                            <h4>E-Commerce Solutions</h4>
+                            <h4>E-Commerce</h4>
                             <p>Build online stores that convert and scale.</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
@@ -292,7 +292,7 @@
                                     precision with real-world insight to deliver impactful results.
                                 </p>
                             </div>
-                            <a class="theme-btn">Learn More <i class="far fa-angle-right"></i></a>
+                            {{-- <a class="theme-btn">Learn More <i class="far fa-angle-right"></i></a> --}}
                         </div>
                     </div>
                     <div class="col-lg-7">
