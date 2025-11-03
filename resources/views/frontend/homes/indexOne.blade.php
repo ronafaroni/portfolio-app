@@ -125,7 +125,7 @@
                                 <i class="fas fa-arrow-right"></i>
                             </div> --}}
                             <div class="about-btn btn-two wow fadeInRight delay-0-5s">
-                                <img src="{{ asset('/assets/images/about/aboutme-icon.png') }}" width="35px"
+                                <img src="{{ asset('/assets/images/about/aboutme-icon1.png') }}" width="35px"
                                     alt="Image">
                                 <h6>Rona Faroni</h6>
                                 <i class="fas fa-arrow-right"></i>
@@ -303,7 +303,7 @@
                                         <img src="{{ asset('/assets/images/skills/laravel.png') }}" width="43%"
                                             alt="Skill">
                                         <h5>Laravel</h5>
-                                        <span class="percent">96%</span>
+                                        {{-- <span class="percent">96%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -311,7 +311,7 @@
                                         <img src="{{ asset('/assets/images/skills/midtrans.png') }}" width="42%"
                                             alt="Skill">
                                         <h5>Midtrans</h5>
-                                        <span class="percent">83%</span>
+                                        {{-- <span class="percent">83%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -319,22 +319,23 @@
                                         <img src="{{ asset('/assets/images/skills/tailwind.png') }}" width="68%"
                                             alt="Skill">
                                         <h5>Tailwind</h5>
-                                        <span class="percent">43%</span>
+                                        {{-- <span class="percent">43%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-5s">
-                                        <img src="{{ asset('/assets/images/skills/wordpress.png') }}" alt="Skill">
-                                        <h5>Wordpress</h5>
-                                        <span class="percent">74%</span>
+                                        <img src="{{ asset('/assets/images/skills/javascript.png') }}" width="42%"
+                                            alt="Skill">
+                                        <h5>Javascript</h5>
+                                        {{-- <span class="percent">74%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-2s">
-                                        <img src="{{ asset('/assets/images/skills/mysql.png') }}" width="55%"
+                                        <img src="{{ asset('/assets/images/skills/vuejs.png') }}" width="54%"
                                             alt="Skill">
-                                        <h5>MySQL</h5>
-                                        <span class="percent">95%</span>
+                                        <h5>Vue</h5>
+                                        {{-- <span class="percent">95%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -342,7 +343,7 @@
                                         <img src="{{ asset('/assets/images/skills/react.png') }}" width="50%"
                                             alt="Skill">
                                         <h5>React</h5>
-                                        <span class="percent">46%</span>
+                                        {{-- <span class="percent">46%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -350,7 +351,7 @@
                                         <img src="{{ asset('/assets/images/skills/nextjs.png') }}" width="45%"
                                             alt="Skill">
                                         <h5>Next Js</h5>
-                                        <span class="percent">22%</span>
+                                        {{-- <span class="percent">22%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -358,7 +359,7 @@
                                         <img src="{{ asset('/assets/images/skills/github.png') }}" width="45%"
                                             alt="Skill">
                                         <h5>GitHub</h5>
-                                        <span class="percent">84%</span>
+                                        {{-- <span class="percent">84%</span> --}}
                                     </div>
                                 </div>
                             </div>
@@ -400,13 +401,6 @@
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
                                                 Participants</a></h5>
-                                        <hr>
-                                        <div class="tag-coulds">
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -418,13 +412,6 @@
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
                                                 Participants</a></h5>
-                                        <hr>
-                                        <div class="tag-coulds">
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -436,13 +423,6 @@
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
                                                 Participants</a></h5>
-                                        <hr>
-                                        <div class="tag-coulds">
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -454,13 +434,6 @@
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
                                                 Participants</a></h5>
-                                        <hr>
-                                        <div class="tag-coulds">
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -472,13 +445,7 @@
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
                                                 Participants</a></h5>
-                                        <hr>
-                                        <div class="tag-coulds">
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -490,13 +457,7 @@
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
                                                 Participants</a></h5>
-                                        <hr>
-                                        <div class="tag-coulds">
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                            <a class="tag btn-sm" href="blog.html">Design</a>
-                                            <a class="tag btn-sm" href="blog.html">Figma</a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
