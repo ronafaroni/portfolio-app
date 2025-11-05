@@ -192,7 +192,6 @@
     </section>
     <!-- Resume Area end -->
 
-
     <!-- Services Area start -->
     <section id="services" class="services-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div class="container">
@@ -396,7 +395,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-3s">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-1.png" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -407,7 +406,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-4s">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-1.png" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -418,7 +417,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-5s">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-1.png" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -429,7 +428,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-3s">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-1.png" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -440,7 +439,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-4s">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-1.png" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -452,7 +451,7 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-5s">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-masonry2.jpg" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-1.png" alt="Blog Standard">
                                     </div>
                                     <div class="content">
                                         <h5><a href="blog-details.html">Tips For Conducting to Usability Studies With
@@ -485,7 +484,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-2ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -498,7 +497,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-3ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
                             <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
@@ -509,7 +508,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-4ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
                             <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
@@ -520,7 +519,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-5ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -533,7 +532,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-6ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -546,7 +545,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-7ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -559,7 +558,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-8ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -572,7 +571,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-9ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -593,7 +592,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-2ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -606,7 +605,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-3ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -619,7 +618,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-4ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -632,7 +631,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-5ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
                             <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
@@ -643,7 +642,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-6ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -656,7 +655,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-7ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
 
@@ -669,7 +668,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-8ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
                             <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
@@ -680,7 +679,7 @@
                     <div class="project-item style-three wow fadeInUp delay-0-9ms animated"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="project-image">
-                            <img src="assets/images/projects/project-masonry2.jpg" alt="Project">
+                            <img src="assets/images/projects/project-1.png" alt="Project">
                         </div>
                         <div class="project-content">
                             <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
