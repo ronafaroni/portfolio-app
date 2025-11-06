@@ -91,7 +91,7 @@
     /* CSS untuk memberikan efek blur pada header saat scroll */
     .main-header.fixed-header .header-upper {
         /* Atur warna latar belakang dengan transparansi agar blur terlihat */
-        background-color: rgba(40, 40, 40, 0.85);
+        background-color: rgba(40, 40, 40, 0.80);
 
         /* Efek blur */
         -webkit-backdrop-filter: blur(8px);
