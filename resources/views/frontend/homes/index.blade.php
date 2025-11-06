@@ -415,11 +415,11 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-4s">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-1.webp" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-2.webp" alt="Blog Standard">
                                     </div>
                                     <div class="px-2 py-2">
-                                        <h5><a href="#"><b>Indonesian Furniture</b> <br> <span
-                                                    class="text-muted text-small">Sistem Manajemen Inventory</span></a>
+                                        <h5><a href="#"><b>Analytix Sales</b> <br> <span
+                                                    class="text-muted text-small">Landing Page</span></a>
                                         </h5>
                                     </div>
                                 </div>
@@ -427,47 +427,12 @@
                             <div class="col-md-4 item">
                                 <div class="blog-item style-two wow fadeInUp delay-0-5s">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-1.webp" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-3.webp" alt="Blog Standard">
                                     </div>
                                     <div class="px-2 py-2">
-                                        <h5><a href="#"><b>Indonesian Furniture</b> <br> <span
-                                                    class="text-muted text-small">Sistem Manajemen Inventory</span></a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item">
-                                <div class="blog-item style-two wow fadeInUp delay-0-3s">
-                                    <div class="image">
-                                        <img src="assets/images/projects/project-1.webp" alt="Blog Standard">
-                                    </div>
-                                    <div class="px-2 py-2">
-                                        <h5><a href="#"><b>Indonesian Furniture</b> <br> <span
-                                                    class="text-muted text-small">Sistem Manajemen Inventory</span></a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item">
-                                <div class="blog-item style-two wow fadeInUp delay-0-4s">
-                                    <div class="image">
-                                        <img src="assets/images/projects/project-1.webp" alt="Blog Standard">
-                                    </div>
-                                    <div class="px-2 py-2">
-                                        <h5><a href="#"><b>Indonesian Furniture</b> <br> <span
-                                                    class="text-muted text-small">Sistem Manajemen Inventory</span></a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item">
-                                <div class="blog-item style-two wow fadeInUp delay-0-5s">
-                                    <div class="image">
-                                        <img src="assets/images/projects/project-1.webp" alt="Blog Standard">
-                                    </div>
-                                    <div class="px-2 py-2">
-                                        <h5><a href="#"><b>Indonesian Furniture</b> <br> <span
-                                                    class="text-muted text-small">Sistem Manajemen Inventory</span></a>
+                                        <h5><a href="#"><b>Inventory App</b> <br> <span
+                                                    class="text-muted text-small">Sistem Manajemen Distribusi
+                                                    Barang</span></a>
                                         </h5>
                                     </div>
                                 </div>
