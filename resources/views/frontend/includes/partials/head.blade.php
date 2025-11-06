@@ -87,4 +87,24 @@
     .slide-track:hover {
         animation-play-state: paused;
     }
+
+    /* CSS untuk memberikan efek blur pada header saat scroll */
+    .main-header.fixed-header .header-upper {
+        /* Atur warna latar belakang dengan transparansi agar blur terlihat */
+        background-color: rgba(40, 40, 40, 0.85);
+
+        /* Efek blur */
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+
+        /* Tambahkan bayangan untuk memberikan kedalaman */
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+
+        /* Transisi agar perubahan terlihat mulus */
+        transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .main-header .header-upper {
+        transition: background-color 0.3s ease;
+    }
 </style>

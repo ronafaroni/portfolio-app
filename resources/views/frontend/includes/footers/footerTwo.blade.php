@@ -5,7 +5,8 @@
             <div class="col-lg-3 col-md-5">
                 <div class="footer-widget widget_logo text-center text-md-start wow fadeInUp delay-0-2s">
                     <div class="footer-logo">
-                        <a><img src="{{ asset('/assets/images/logos/logo.png') }}" width="170px" alt="Logo"></a>
+                        <a><img src="{{ asset('/assets/images/logos/logo.png') }}" width="50px" height="auto"
+                                alt="Logo"></a>
                     </div>
                 </div>
             </div>

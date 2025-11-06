@@ -32,6 +32,31 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
 <script>
+    function sendToWhatsApp(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone_number").value;
+        const message = document.getElementById("message").value;
+        const whatsappNumber = "6285226118681"; // Ganti dengan nomor WhatsApp kamu
+
+        const text = `Hello, Sintesa Digital Solution 👋
+    Name: ${name}
+    Phone: ${phone}
+    Message: ${message}
+
+    Thank you for contacting us! 🙏
+    We'll get back to you as soon as possible.`;
+
+        const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+        window.open(url, "_blank");
+
+        // Optional alert
+        alert("Thank you! Your message is being sent to our WhatsApp.");
+    }
+</script>
+
+<script>
     // Pilih semua link di navbar
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
@@ -50,29 +75,4 @@
             }
         });
     });
-</script>
-
-<script>
-    function sendToWhatsApp(event) {
-        event.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const phone = document.getElementById("phone_number").value;
-        const message = document.getElementById("message").value;
-        const whatsappNumber = "6285226118681"; // Ganti dengan nomor WhatsApp kamu
-
-        const text = `Hello, Sintesa Digital Solution 👋
-    Name: ${name}
-    Phone: ${phone}
-    Message: ${message}
-
-    Thank you for contacting us! 🙏
-    We’ll get back to you as soon as possible.`;
-
-        const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
-        window.open(url, "_blank");
-
-        // Optional alert
-        alert("Thank you! Your message is being sent to our WhatsApp.");
-    }
 </script>

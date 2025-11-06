@@ -7,8 +7,8 @@
             <div class="header-inner rel d-flex align-items-center">
                 <div class="logo-outer">
                     <div class="logo"><a href="{{ route('home') }}"><img
-                                src="{{ asset('/assets/images/logos/logo.png') }}" alt="Logo" width="170px"
-                                title="Logo"></a>
+                                src="{{ asset('/assets/images/logos/logo.png') }}" alt="Logo" width="30%"
+                                height="auto" title="Logo"></a>
                     </div>
                 </div>
 
@@ -18,8 +18,8 @@
                         <div class="navbar-header">
                             <div class="mobile-logo my-15">
                                 <a href="{{ route('home') }}">
-                                    <img src="{{ asset('/assets/images/logos/logo.png') }}" width="170px"
-                                        alt="Logo" title="Logo">
+                                    <img src="{{ asset('/assets/images/logos/logo.png') }}" width="30%"
+                                        height="auto" alt="Logo" title="Logo">
                                 </a>
                             </div>
 
