@@ -20,7 +20,7 @@
     content="Building scalable and user-focused digital products with clean code, modern UI, and strong technical architecture.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ronafaronie.my.id">
-<meta property="og:image" content="https://ronafaronie.my.id/assets/images/preview.jpg">
+<meta property="og:image" content="https://ronafaronie.my.id/assets/images/about/aboutme-icon1.webp">
 <meta property="og:site_name" content="Rona Faroni">
 <meta property="og:locale" content="ID">
 <meta property="profile:username" content="ronafachronie"> <!-- Instagram & Threads -->
