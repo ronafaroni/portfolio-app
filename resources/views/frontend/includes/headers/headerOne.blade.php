@@ -6,9 +6,10 @@
 
             <div class="header-inner rel d-flex align-items-center">
                 <div class="logo-outer">
-                    <div class="logo"><a href="{{ route('home') }}"><img
-                                src="{{ asset('/assets/images/logos/logo.png') }}" alt="Logo" width="30%"
-                                height="auto" title="Logo"></a>
+                    <div class="logo text-center">
+                        <a href="{{ route('home') }}">
+                            <img src="{{ asset('/assets/images/logos/logo.png') }}" class="img-fluid" width="30%">
+                        </a>
                     </div>
                 </div>
 
