@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://ronafaronie.my.id/assets/images/preview.jpg" alt="Project Preview" width="600"/>
+  <img src="src="{{ asset('/assets/images/about/aboutme.webp') }}"" alt="Project Preview" width="600"/>
   <h1>Rona Faroni - Personal Portfolio</h1>
   <p>
     Website portofolio pribadi yang dibangun dengan Laravel untuk menampilkan profil, keahlian, proyek, dan layanan sebagai seorang Fullstack Developer & Digital Product Engineer.
