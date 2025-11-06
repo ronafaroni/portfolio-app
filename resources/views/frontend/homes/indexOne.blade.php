@@ -696,7 +696,7 @@
 
 
     <!-- FAQs Area start -->
-    <section id="faqs" class="faqs-area py-130 rpy-100 rel z-1">
+    <section id="faqs" class="faqs-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -821,7 +821,7 @@
 
 
     <!-- Contact Area start -->
-    <section id="contact" class="contact-area pt-95 pb-150 rpt-70 rpy-100 rpb-100 rel z-1">
+    <section id="contact" class="contact-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -958,7 +958,7 @@
     <!-- Blog Area end -->
 
     <!-- Client Log start -->
-    <div class="client-logo-area rel z-1 pt-100 rpt-100 pb-60">
+    <div class="client-logo-area rel pt-100 z-1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12">
