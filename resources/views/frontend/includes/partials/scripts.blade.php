@@ -76,3 +76,22 @@
         });
     });
 </script>
+
+@verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rona Faroni",
+  "jobTitle": "Fullstack Developer",
+  "url": "https://ronafaronie.my.id",
+  "image": "https://ronafaronie.my.id/assets/images/profile.jpg",
+  "description": "Fullstack Developer specializing in Web and App development, building scalable and elegant digital experiences.",
+  "sameAs": [
+    "https://github.com/ronafaroni",
+    "https://linkedin.com/in/ronafaroni",
+    "https://instagram.com/ronafaroni"
+  ]
+}
+</script>
+@endverbatim

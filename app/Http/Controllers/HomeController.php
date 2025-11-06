@@ -10,19 +10,7 @@ class HomeController extends Controller
     public function indexOne()
     {
         $bodyClass = 'page-wrapper';
-        return view('frontend.homes.indexOne', compact('bodyClass'));
-    }
-    // Home Two
-    public function indexTwo()
-    {
-        $bodyClass = 'page-wrapper for-sidebar-menu';
-        return view('frontend.homes.indexTwo', compact('bodyClass'));
-    }
-
-    // Home Three
-    public function indexThree()
-    {
-        return view('frontend.homes.indexThree');
+        return view('frontend.homes.index', compact('bodyClass'));
     }
 
 }
