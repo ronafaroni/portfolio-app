@@ -1,62 +1,142 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <img src="https://ronafaronie.my.id/assets/images/preview.jpg" alt="Project Preview" width="600"/>
+  <h1>Rona Faroni - Personal Portfolio</h1>
+  <p>
+    Website portofolio pribadi yang dibangun dengan Laravel untuk menampilkan profil, keahlian, proyek, dan layanan sebagai seorang Fullstack Developer & Digital Product Engineer.
+  </p>
+  <p>
+    <a href="https://ronafaronie.my.id" target="_blank"><strong>Lihat Live Demo »</strong></a>
+  </p>
+</div>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/Framework-Laravel-FF2D20?style=for-the-badge&logo=laravel" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php" alt="PHP">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery">
 </p>
 
-## About Laravel
+## 🚀 Tentang Proyek Ini
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Proyek ini adalah implementasi website portofolio modern yang dirancang untuk menjadi representasi digital dari **Rona Faroni**. Dibangun di atas framework **Laravel**, situs ini tidak hanya berfungsi sebagai CV online, tetapi juga sebagai pameran keahlian teknis dalam pengembangan web, mulai dari arsitektur backend yang solid hingga antarmuka frontend yang interaktif dan responsif.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Tujuan utamanya adalah untuk mengubah masalah kompleks menjadi produk digital yang sederhana, fungsional, dan elegan, dengan kode yang bersih dan pengalaman pengguna yang luar biasa.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Fitur Utama
 
-## Learning Laravel
+Berdasarkan analisis kode, berikut adalah fitur-fitur unggulan dari proyek ini:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   **Header Interaktif**: Header memiliki efek _blur_ dan menjadi _fixed_ saat halaman di-scroll, memberikan nuansa modern. Logika ini diimplementasikan menggunakan jQuery di `public/assets/js/script.js` dan CSS kustom di `head.blade.php`.
+-   **Desain Responsif**: Menggunakan Bootstrap sebagai basis, memastikan tampilan optimal di berbagai perangkat, dari desktop hingga mobile.
+-   **Animasi On-Scroll**: Elemen-elemen halaman muncul dengan animasi halus saat di-scroll berkat pustaka `WOW.js`.
+-   **Navigasi Smooth Scroll**: Klik pada menu navigasi akan mengarahkan pengguna ke bagian halaman yang sesuai dengan efek gulir yang mulus, diatur dalam `scripts.blade.php`.
+-   **Integrasi WhatsApp**: Formulir kontak terintegrasi langsung dengan WhatsApp, memungkinkan pengunjung untuk mengirim pesan dengan mudah. Logika ini berada di `scripts.blade.php`.
+-   **SEO & Social Media Optimized**: Dilengkapi dengan meta tags yang lengkap (termasuk Open Graph dan Twitter Cards) untuk optimisasi mesin pencari dan tampilan yang baik saat dibagikan di media sosial.
+-   **Slider & Carousel Dinamis**:
+    -   **Tools Slideshow**: Menampilkan logo teknologi yang dikuasai dalam format _infinite scrolling slideshow_, dibuat dengan CSS Keyframes.
+    -   **Testimonials**: Menggunakan `Slick.js` untuk menampilkan testimoni dalam bentuk slider interaktif.
+-   **Filter Proyek**: Bagian portofolio menggunakan `Isotope.js` untuk memfilter proyek berdasarkan kategori secara dinamis tanpa me-reload halaman.
+-   **Struktur Data (Schema.org)**: Mengimplementasikan JSON-LD untuk data terstruktur (tipe `Person`), membantu mesin pencari seperti Google memahami konten tentang profil Rona Faroni.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🛠️ Teknologi yang Digunakan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Proyek ini dibangun dengan tumpukan teknologi yang solid dan modern:
 
-## Laravel Sponsors
+### Backend
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   **Framework**: Laravel
+-   **Bahasa**: PHP
 
-### Premium Partners
+### Frontend
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+-   **Templating**: Blade
+-   **Styling**: CSS3, Bootstrap, Animate.css
+-   **JavaScript**:
+    -   **Library Utama**: jQuery
+    -   **Animasi**: WOW.js
+    -   **Slider/Carousel**: Slick.js, Swiper.js
+    -   **Layout & Filtering**: Isotope.js
+    -   **UI**: Nice Select
 
-## Contributing
+### Tools & Lainnya
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+-   **SEO**: JSON-LD, Open Graph, Twitter Cards
+-   **Icon**: Font Awesome, Flaticon
 
-## Code of Conduct
+## 📂 Struktur Proyek
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Berikut adalah gambaran singkat tentang file dan direktori kunci dalam proyek ini:
 
-## Security Vulnerabilities
+```
+portfolio-app/
+├── public/
+│   └── assets/
+│       ├── css/style.css       # File CSS utama
+│       └── js/script.js        # File JavaScript utama (jQuery)
+├── resources/
+│   └── views/
+│       └── frontend/
+│           ├── includes/
+│           │   ├── partials/
+│           │   │   ├── head.blade.php    # Meta tags, aset CSS, & CSS kustom
+│           │   │   └── scripts.blade.php # Aset JS & skrip kustom
+│           │   └── header.blade.php  # Struktur header & navigasi
+│           └── index.blade.php     # Halaman utama yang menggabungkan semua bagian
+├── README.md                   # Anda sedang membacanya
+└── ... (file-file Laravel lainnya)
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## ⚙️ Instalasi & Setup Lokal
 
-## License
+Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah berikut:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# portfolio-app
+1.  **Clone repository ini:**
+
+    ```bash
+    git clone https://github.com/username/portfolio-app.git
+    cd portfolio-app
+    ```
+
+2.  **Install dependensi Composer:**
+
+    ```bash
+    composer install
+    ```
+
+3.  **Buat file environment:**
+    Salin file `.env.example` menjadi `.env`.
+
+    ```bash
+    cp .env.example .env
+    ```
+
+4.  **Generate kunci aplikasi Laravel:**
+
+    ```bash
+    php artisan key:generate
+    ```
+
+5.  **Jalankan server pengembangan:**
+
+    ```bash
+    php artisan serve
+    ```
+
+6.  Buka `http://127.0.0.1:8000` di browser Anda.
+
+## 🎨 Kustomisasi
+
+-   **Perilaku Header**: Untuk mengubah ambang batas scroll atau efek blur, modifikasi CSS di `resources/views/frontend/includes/partials/head.blade.php` pada kelas `.main-header.fixed-header` dan JavaScript di `public/assets/js/script.js` dalam fungsi `headerStyle()`.
+-   **Nomor WhatsApp**: Ganti nomor WhatsApp tujuan di `resources/views/frontend/includes/partials/scripts.blade.php` dalam fungsi `sendToWhatsApp()`.
+-   **Konten Halaman**: Sebagian besar konten statis seperti teks, gambar, dan proyek dapat diubah langsung di file-file Blade yang relevan di dalam `resources/views/frontend/`.
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah MIT License.
+
+---
+
+<div align="center">
+  Dibuat dengan ❤️ oleh Rona Faroni
+</div>

@@ -30,7 +30,7 @@
             <div class="col-xl-6 col-lg-7">
                 <div class="footer-widget widget_text text-center text-lg-start wow fadeInUp delay-0-2s">
                     <div class="text pb-20">
-                        <h5><span>PT. Sintesa Digital Solution</span></h5>
+                        <h5><span>Office Address :</span></h5>
                         <p>Jl. GPD Jepara, Jawa Tengah, Indonesia <br>
                             0852-2611-8681 (via WhatsApp)</p>
                     </div>
