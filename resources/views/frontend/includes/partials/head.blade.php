@@ -23,12 +23,18 @@
 <meta property="og:image" content="https://ronafaronie.my.id/assets/images/preview.jpg">
 <meta property="og:site_name" content="Rona Faroni">
 <meta property="og:locale" content="ID">
+<meta property="profile:username" content="ronafachronie"> <!-- Instagram & Threads -->
+<meta property="profile:first_name" content="Rona">
+<meta property="profile:last_name" content="Faroni">
+<meta property="og:see_also" content="https://www.linkedin.com/in/ronafaroni">
+<meta property="og:see_also" content="https://www.facebook.com/rona.fachronie">
+<meta property="og:see_also" content="https://github.com/ronafaroni">
 
 <!-- ✅ TWITTER CARD -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Rona Faroni — Fullstack Developer">
 <meta name="twitter:description" content="Transforming ideas into modern, scalable, and impactful digital products.">
-<meta name="twitter:image" content="https://ronafaroni.my.id/assets/images/preview.jpg">
+<meta name="twitter:image" content="https://ronafaronie.my.id/assets/images/about/aboutme-icon1.webp">
 <meta name="twitter:creator" content="@ronafaroni">
 
 <!-- Title -->
