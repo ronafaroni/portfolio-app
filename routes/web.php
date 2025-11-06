@@ -5,6 +5,6 @@ use Illuminate\Support\Facades\Route;
 
 // All Index Pages Routing
 Route::controller(HomeController::class)->group(function () {
-    Route::get('/', 'indexOne')->name('home'); // index
-    Route::get('/download', 'donwload')->name('download'); // about)
+    Route::get('/', 'index')->name('home'); // index
+    Route::get('/download', 'download')->name('download');
 });

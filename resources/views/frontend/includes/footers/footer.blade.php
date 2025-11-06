@@ -60,7 +60,7 @@
     <div class="footer-bottom pt-10 pb-15">
         <div class="container">
             <div class="copyright-text text-center">
-                <p>Copyright @2025. <a>Sintesa Digital Solution.</a> All Rights Reserved</p>
+                <p>Copyright @2025. All Rights Reserved</p>
             </div>
         </div>
     </div>

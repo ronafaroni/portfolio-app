@@ -22,9 +22,12 @@
                         </p>
 
                         <div class="hero-btns">
-                            <a href="http://wa.me/6285226118681" target="_blank" class="theme-btn">Hire Me <i
-                                    class="far fa-angle-right"></i></a>
-                            <a href="{{ route('download') }}" class="read-more">Download CV <i
+                            <a href="https://wa.me/6285226118681?text=Halo%20Rona%2C%0A%0ASaya%20tertarik%20untuk%20bekerja%20sama.%20Bisa%20kita%20diskusikan%20lebih%20lanjut%3F%0A%0ATerima%20kasih."
+                                target="_blank" class="theme-btn">
+                                Hire Me <i class="far fa-angle-right"></i>
+                            </a>
+
+                            <a href="{{ route('download') }}" target="_blank" class="read-more">Download CV <i
                                     class="far fa-angle-right"></i></a>
                         </div>
                     </div>
@@ -111,7 +114,10 @@
                                         <i class="far fa-phone"></i>
                                         <div class="content">
                                             <span>Make A Call</span><br>
-                                            <a href="https://wa.me/6285226118681" target="_blank">085226118681</a>
+                                            <a href="https://wa.me/6285226118681?text=Halo%20Rona%2C%0A%0ASaya%20tertarik%20untuk%20bekerja%20sama.%20Bisa%20kita%20diskusikan%20lebih%20lanjut%3F%0A%0ATerima%20kasih."
+                                                target="_blank">
+                                                085226118681
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
