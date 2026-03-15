@@ -34,26 +34,72 @@
 <script>
     function sendToWhatsApp(event) {
         event.preventDefault();
+        const form = event.target;
+        const currentLang = "{{ App::getLocale() }}";
+
+        // Validasi form manual dengan alert bilingual
+        if (!form.checkValidity()) {
+            const errorMsg = currentLang === 'id' 
+                ? "Mohon lengkapi semua kolom formulir sebelum mengirim." 
+                : "Please fill out all fields before sending.";
+            alert(errorMsg);
+            form.reportValidity();
+            return;
+        }
 
         const name = document.getElementById("name").value;
         const phone = document.getElementById("phone_number").value;
         const message = document.getElementById("message").value;
-        const whatsappNumber = "6285226118681"; // Ganti dengan nomor WhatsApp kamu
+        const whatsappNumber = "6285226118681";
 
-        const text = `Hello, Sintesa Digital Solution 👋
-    Name: ${name}
-    Phone: ${phone}
-    Message: ${message}
+        let text = "";
+        
+        if (currentLang === 'id') {
+            text = `Halo, Sintesa Digital Solution 👋
+Nama: ${name}
+No. HP: ${phone}
+Pesan: ${message}
 
-    Thank you for contacting us! 🙏
-    We'll get back to you as soon as possible.`;
+Terima kasih telah menghubungi kami! 🙏
+Kami akan membalas pesan Anda sesegera mungkin.`;
+        } else {
+            text = `Hello, Sintesa Digital Solution 👋
+Name: ${name}
+Phone: ${phone}
+Message: ${message}
+
+Thank you for contacting us! 🙏
+We'll get back to you as soon as possible.`;
+        }
 
         const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
         window.open(url, "_blank");
 
-        // Optional alert
-        alert("Thank you! Your message is being sent to our WhatsApp.");
+        const alertMsg = currentLang === 'id' 
+            ? "Terima kasih! Pesan Anda sedang dikirim ke WhatsApp kami." 
+            : "Thank you! Your message is being sent to our WhatsApp.";
+        alert(alertMsg);
     }
+
+    // Custom Bilingual Validation Messages (Browser Bubble)
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentLang = "{{ App::getLocale() }}";
+        const formInputs = document.querySelectorAll('#contactForm input[required], #contactForm textarea[required]');
+        
+        formInputs.forEach(input => {
+            const setMsg = () => {
+                if (input.validity.valueMissing) {
+                    const msg = currentLang === 'id' ? "Harap isi bidang ini." : "Please fill out this field.";
+                    input.setCustomValidity(msg);
+                } else {
+                    input.setCustomValidity("");
+                }
+            };
+
+            input.addEventListener('invalid', setMsg);
+            input.addEventListener('input', () => input.setCustomValidity(""));
+        });
+    });
 </script>
 
 <script>
@@ -74,6 +120,29 @@
                 });
             }
         });
+    });
+</script>
+
+<script>
+    // Manual Language Dropdown Toggle (Fix for all devices)
+    document.addEventListener('DOMContentLoaded', function() {
+        const langBtn = document.getElementById('langDropdown');
+        const langMenu = langBtn ? langBtn.nextElementSibling : null;
+
+        if (langBtn && langMenu) {
+            langBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            document.addEventListener('click', function() {
+                langMenu.style.display = 'none';
+            });
+            
+            langMenu.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        }
     });
 </script>
 

@@ -1,5 +1,5 @@
 @extends('frontend.layouts.app')
-@section('title', 'Rona Faroni | Fullstack Developer')
+@section('title', __('messages.page_title'))
 @section('content')
 
     <!-- header area -->
@@ -13,22 +13,19 @@
                 <div class="col-lg-1"></div>
                 <div class="col-lg-6">
                     <div class="hero-content rmb-55 wow fadeInUp delay-0-2s">
-                        <h3><span class="text-muted">Hello, I'm</span></h3>
+                        <h3><span class="text-muted">{{ __('messages.hero_iam') }}</span></h3>
                         <h1><b>Rona Faroni</b></h1>
-                        <h3>Fullstack Developer</h3>
-                        <p>
-                            Let’s build something amazing together. Your dream website and app start here —
-                            powerful, modern, and made to grow your business.
-                        </p>
+                        <h3>{{ __('messages.hero_job') }}</h3>
+                        <p>{{ __('messages.hero_desc') }}</p>
 
                         <div class="hero-btns">
-                            <a href="https://wa.me/6285226118681?text=Halo%20Rona%2C%0A%0ASaya%20tertarik%20untuk%20bekerja%20sama.%20Bisa%20kita%20diskusikan%20lebih%20lanjut%3F%0A%0ATerima%20kasih."
+                            <a href="https://wa.me/6285226118681?text={{ urlencode(__('messages.wa_message')) }}"
                                 target="_blank" class="theme-btn">
-                                Hire Me <i class="far fa-angle-right"></i>
+                                {{ __('messages.hire_me') }} <i class="far fa-angle-right"></i>
                             </a>
 
-                            <a href="{{ route('download') }}" target="_blank" class="read-more">Download CV <i
-                                    class="far fa-angle-right"></i></a>
+                            <a href="{{ route('download') }}" target="_blank"
+                                class="read-more">{{ __('messages.download_cv') }} <i class="far fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +48,7 @@
                 <div class="col-lg-4">
                     <div class="wow fadeIn delay-0-3s">
                         {{-- <div class="bg-circle"></div> --}}
-                        <img src="{{ asset('/assets/images/hero/founder.webp') }}" alt="Author">
+                        <img src="{{ asset('/assets/images/hero/founder.webp') }}" alt="{{ __('messages.alt_author') }}">
                         {{-- <div class="progress-shape">
                             <img src="{{ asset('/assets/images/hero/progress-shape.webp') }}" alt="Progress">
                         </div> --}}
@@ -78,26 +75,21 @@
                     <div class="col-lg-7">
                         <div class="about-content-part rel z-2 rmb-55">
                             <div class="section-title mb-35 wow fadeInUp delay-0-2s">
-                                <span class="sub-title mb-15">About Me</span>
-                                <h2>Professional <span> Problem Solver</span> for Modern Digital Products</h2>
-                                <p>
-                                    I’m Rona Faroni — a passionate Fullstack Developer who transforms complex challenges
-                                    into simple, elegant, and impactful digital experiences. I blend creativity, design
-                                    thinking, and technical precision to build products <br> that don’t just work — they
-                                    inspire.
-                                </p>
+                                <span class="sub-title mb-15">{{ __('messages.about_subtitle') }}</span>
+                                <h2>{!! __('messages.about_title') !!}</h2>
+                                <p>{{ __('messages.about_desc') }}</p>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <ul class="list-style-one wow fadeInUp delay-0-2s">
-                                        <li>Website Development</li>
-                                        <li>Brand & Visual Identity</li>
+                                        <li>{{ __('messages.service_list_1') }}</li>
+                                        <li>{{ __('messages.service_list_2') }}</li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-6">
                                     <ul class="list-style-one wow fadeInUp delay-0-2s">
-                                        <li>Custom Business System</li>
-                                        <li>Technical Supports</li>
+                                        <li>{{ __('messages.service_list_3') }}</li>
+                                        <li>{{ __('messages.service_list_4') }}</li>
                                     </ul>
                                 </div>
 
@@ -106,15 +98,15 @@
                                     <div class="info-box-item">
                                         <i class="far fa-envelope"></i>
                                         <div class="content">
-                                            <span>Email Us</span><br>
+                                            <span>{{ __('messages.email_us') }}</span><br>
                                             <a href="{{ url('mailto:ronafaroni95@gmail.com') }}">ronafaroni95@gmail.com</a>
                                         </div>
                                     </div>
                                     <div class="info-box-item">
                                         <i class="far fa-phone"></i>
                                         <div class="content">
-                                            <span>Make A Call</span><br>
-                                            <a href="https://wa.me/6285226118681?text=Halo%20Rona%2C%0A%0ASaya%20tertarik%20untuk%20bekerja%20sama.%20Bisa%20kita%20diskusikan%20lebih%20lanjut%3F%0A%0ATerima%20kasih."
+                                            <span>{{ __('messages.make_call') }}</span><br>
+                                            <a href="https://wa.me/6285226118681?text={{ urlencode(__('messages.wa_message')) }}"
                                                 target="_blank">
                                                 085226118681
                                             </a>
@@ -126,20 +118,19 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="about-image-part wow fadeInUp delay-0-3s">
-                            <img src="{{ asset('/assets/images/about/aboutme.webp') }}" alt="About Me">
+                            <img src="{{ asset('/assets/images/about/aboutme.webp') }}" alt="{{ __('messages.about_subtitle') }}">
                             {{-- <div class="about-btn btn-one wow fadeInRight delay-0-4s">
                                 <img src="{{ asset('/assets/images/about/btn-image1.webp') }}" alt="Image">
                                 <h6>Experience Products</h6>
                                 <i class="fas fa-arrow-right"></i>
                             </div> --}}
                             <div class="about-btn btn-two wow fadeInRight delay-0-5s">
-                                <img src="{{ asset('/assets/images/about/aboutme-icon1.webp') }}" width="35px"
-                                    alt="Image">
-                                <h6>Rona Faroni</h6>
+                                <img src="{{ asset('/assets/images/about/aboutme-icon1.webp') }}" width="35px" alt="{{ __('messages.alt_shape') }}">
+                                <h6>{{ __('messages.page_title') }}</h6>
                                 <i class="fas fa-arrow-right"></i>
                             </div>
                             <div class="dot-shape">
-                                <img src="{{ asset('/assets/images/shape/shape.webp') }}" width="30px" alt="Shape">
+                                <img src="{{ asset('/assets/images/shape/shape.webp') }}" width="30px" alt="{{ __('messages.alt_shape') }}">
                             </div>
                         </div>
                     </div>
@@ -163,7 +154,7 @@
                 <div class="col-lg-6">
                     <div class="what-i-do-images rmb-55 wow fadeInUp delay-0-2s">
                         <div class="first-image">
-                            <img src="{{ asset('/assets/images/about/about-1.webp') }}" alt="What I do">
+                            <img src="{{ asset('/assets/images/about/about-1.webp') }}" alt="{{ __('messages.what_i_do') }}">
                         </div>
                         {{-- <div class="last-image">
                             <img src="{{ asset('/assets/images/about/what-i-do2.jpg') }}" alt="What I do">
@@ -175,15 +166,14 @@
                 <div class="col-xl-5 col-lg-6">
                     <div class="what-i-do-content wow fadeInUp delay-0-4s">
                         <div class="section-title mb-40">
-                            <span class="sub-title mb-15">What I Do</span>
-                            <h2>Transforming Problems into <span>Seamless Digital Solutions</span></h2>
-                            <p>With over 3 years of experience, I design and develop modern websites and mobile applications
-                                that are functional, elegant, and user-focused. </p>
+                            <span class="sub-title mb-15">{{ __('messages.what_i_do') }}</span>
+                            <h2>{!! __('messages.what_i_do_title') !!}</h2>
+                            <p>{{ __('messages.what_i_do_desc') }}</p>
                         </div>
                         <ul class="list-style-two pb-50">
-                            <li>3+ Years of Experience</li>
-                            <li>Fullstack Developer</li>
-                            <li>Smart & Scalable Digital Solutions</li>
+                            <li>{{ __('messages.exp_years') }}</li>
+                            <li>{{ __('messages.hero_job') }}</li>
+                            <li>{{ __('messages.special_sol') }}</li>
                         </ul>
 
                     </div>
@@ -206,8 +196,8 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8">
                     <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                        <span class="sub-title mb-15">Featured Services</span>
-                        <h2>My <span>Special Services</span> For your Business Development</h2>
+                        <span class="sub-title mb-15">{{ __('messages.featured_services') }}</span>
+                        <h2>{!! __('messages.my_special_services') !!}</h2>
                     </div>
                 </div>
             </div>
@@ -216,8 +206,8 @@
                     <div class="service-item wow fadeInUp delay-0-2s">
                         <div class="number">01.</div>
                         <div class="content">
-                            <h4>Website Development</h4>
-                            <p>Build responsive, fast, and modern business.</p>
+                            <h4>{{ __('messages.service_1_title') }}</h4>
+                            <p>{{ __('messages.service_1_desc') }}</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -226,8 +216,8 @@
                     <div class="service-item wow fadeInUp delay-0-4s">
                         <div class="number">02.</div>
                         <div class="content">
-                            <h4>Custom Web Applications</h4>
-                            <p>Build scalable and secure system.</p>
+                            <h4>{{ __('messages.service_2_title') }}</h4>
+                            <p>{{ __('messages.service_2_desc') }}</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -236,8 +226,8 @@
                     <div class="service-item wow fadeInUp delay-0-2s">
                         <div class="number">03.</div>
                         <div class="content">
-                            <h4>Company Profile</h4>
-                            <p>Present your brand with web identity.</p>
+                            <h4>{{ __('messages.service_3_title') }}</h4>
+                            <p>{{ __('messages.service_3_desc') }}</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -246,8 +236,8 @@
                     <div class="service-item wow fadeInUp delay-0-4s">
                         <div class="number">04.</div>
                         <div class="content">
-                            <h4>E-Commerce</h4>
-                            <p>Build online stores that convert and scale.</p>
+                            <h4>{{ __('messages.service_4_title') }}</h4>
+                            <p>{{ __('messages.service_4_desc') }}</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -256,8 +246,8 @@
                     <div class="service-item wow fadeInUp delay-0-2s">
                         <div class="number">05.</div>
                         <div class="content">
-                            <h4>Business Management System</h4>
-                            <p>Automate operations with custom tools.</p>
+                            <h4>{{ __('messages.service_5_title') }}</h4>
+                            <p>{{ __('messages.service_5_desc') }}</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -266,8 +256,8 @@
                     <div class="service-item wow fadeInUp delay-0-4s">
                         <div class="number">06.</div>
                         <div class="content">
-                            <h4>Maintenance & Tech Support</h4>
-                            <p>Keep your system running smoothly 24/7.</p>
+                            <h4>{{ __('messages.service_6_title') }}</h4>
+                            <p>{{ __('messages.service_6_desc') }}</p>
                         </div>
                         <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -292,12 +282,9 @@
                     <div class="col-lg-5">
                         <div class="skill-content-part rel z-2 rmb-55 wow fadeInUp delay-0-2s">
                             <div class="section-title mb-40">
-                                <span class="sub-title mb-15">My Skills</span>
-                                <h2>Explore <span>My Expertise and Experience</span></h2>
-                                <p>
-                                    I create efficient, scalable, and user-centric digital solutions — combining technical
-                                    precision with real-world insight to deliver impactful results.
-                                </p>
+                                <span class="sub-title mb-15">{{ __('messages.my_skills') }}</span>
+                                <h2>{!! __('messages.skills_title') !!}</h2>
+                                <p>{{ __('messages.skills_desc') }}</p>
                             </div>
                             {{-- <a class="theme-btn">Learn More <i class="far fa-angle-right"></i></a> --}}
                         </div>
@@ -308,7 +295,7 @@
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-2s">
                                         <img src="{{ asset('/assets/images/skills/laravel.webp') }}" width="43%"
-                                            alt="Skill">
+                                            alt="{{ __('messages.alt_skill') }}">
                                         <h5>Laravel</h5>
                                         {{-- <span class="percent">96%</span> --}}
                                     </div>
@@ -316,7 +303,7 @@
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-3s">
                                         <img src="{{ asset('/assets/images/skills/midtrans.webp') }}" width="42%"
-                                            alt="Skill">
+                                            alt="{{ __('messages.alt_skill') }}">
                                         <h5>Midtrans</h5>
                                         {{-- <span class="percent">83%</span> --}}
                                     </div>
@@ -324,7 +311,7 @@
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-4s">
                                         <img src="{{ asset('/assets/images/skills/tailwind.webp') }}" width="68%"
-                                            alt="Skill">
+                                            alt="{{ __('messages.alt_skill') }}">
                                         <h5>Tailwind</h5>
                                         {{-- <span class="percent">43%</span> --}}
                                     </div>
@@ -332,39 +319,35 @@
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-5s">
                                         <img src="{{ asset('/assets/images/skills/javascript.webp') }}" width="42%"
-                                            alt="Skill">
+                                            alt="{{ __('messages.alt_skill') }}">
                                         <h5>Javascript</h5>
                                         {{-- <span class="percent">74%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-2s">
-                                        <img src="{{ asset('/assets/images/skills/vuejs.webp') }}" width="54%"
-                                            alt="Skill">
+                                        <img src="{{ asset('/assets/images/skills/vuejs.webp') }}" width="54%" alt="{{ __('messages.alt_skill') }}">
                                         <h5>Vue</h5>
                                         {{-- <span class="percent">95%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-3s">
-                                        <img src="{{ asset('/assets/images/skills/react.webp') }}" width="50%"
-                                            alt="Skill">
+                                        <img src="{{ asset('/assets/images/skills/react.webp') }}" width="50%" alt="{{ __('messages.alt_skill') }}">
                                         <h5>React</h5>
                                         {{-- <span class="percent">46%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-4s">
-                                        <img src="{{ asset('/assets/images/skills/nextjs.webp') }}" width="45%"
-                                            alt="Skill">
+                                        <img src="{{ asset('/assets/images/skills/nextjs.webp') }}" width="45%" alt="{{ __('messages.alt_skill') }}">
                                         <h5>Next Js</h5>
                                         {{-- <span class="percent">22%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-5s">
-                                        <img src="{{ asset('/assets/images/skills/github.webp') }}" width="45%"
-                                            alt="Skill">
+                                        <img src="{{ asset('/assets/images/skills/github.webp') }}" width="45%" alt="{{ __('messages.alt_skill') }}">
                                         <h5>GitHub</h5>
                                         {{-- <span class="percent">84%</span> --}}
                                     </div>
@@ -391,53 +374,74 @@
             <div class="row justify-content-center">
                 <div class="col-xl-12">
                     <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                        <span class="sub-title mb-15">Latest Works</span>
-                        <h2>Explore My Popular <span>Projects</span></h2>
+                        <span class="sub-title mb-15">{{ __('messages.latest_works') }}</span>
+                        <h2>{!! __('messages.explore_projects') !!}</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="blog-standard-wrap">
-                        <div class="row">
-                            <div class="col-md-4 item">
-                                <div class="blog-item style-two wow fadeInUp delay-0-3s">
+                    <div class="swiper project-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Project 1 -->
+                            <div class="swiper-slide">
+                                <div class="blog-item style-two">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-1.webp" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-1.webp" alt="{{ __('messages.proj_1_title') }}"
+                                            class="project-img-modal cursor-pointer">
                                     </div>
                                     <div class="px-2 py-2">
-                                        <h5><a href="#"><b>Indonesian Furniture</b> <br> <span
-                                                    class="text-muted text-small">Sistem Manajemen Inventory</span></a>
+                                        <h5><a href="javascript:void(0)"><b>{{ __('messages.proj_1_title') }}</b> <br> <span
+                                                    class="text-muted text-small">{{ __('messages.proj_1_desc') }}</span></a>
                                         </h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 item">
-                                <div class="blog-item style-two wow fadeInUp delay-0-4s">
+                            <!-- Project 2 -->
+                            <div class="swiper-slide">
+                                <div class="blog-item style-two">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-2.webp" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-2.webp" alt="{{ __('messages.proj_2_title') }}"
+                                            class="project-img-modal cursor-pointer">
                                     </div>
                                     <div class="px-2 py-2">
-                                        <h5><a href="#"><b>Analytix Sales</b> <br> <span
-                                                    class="text-muted text-small">Landing Page</span></a>
+                                        <h5><a href="javascript:void(0)"><b>{{ __('messages.proj_2_title') }}</b> <br> <span
+                                                    class="text-muted text-small">{{ __('messages.proj_2_desc') }}</span></a>
                                         </h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 item">
-                                <div class="blog-item style-two wow fadeInUp delay-0-5s">
+                            <!-- Project 3 -->
+                            <div class="swiper-slide">
+                                <div class="blog-item style-two">
                                     <div class="image">
-                                        <img src="assets/images/projects/project-3.webp" alt="Blog Standard">
+                                        <img src="assets/images/projects/project-3.webp" alt="{{ __('messages.proj_3_title') }}"
+                                            class="project-img-modal cursor-pointer">
                                     </div>
                                     <div class="px-2 py-2">
-                                        <h5><a href="#"><b>Inventory App</b> <br> <span
-                                                    class="text-muted text-small">Sistem Manajemen Distribusi
-                                                    Barang</span></a>
+                                        <h5><a href="javascript:void(0)"><b>{{ __('messages.proj_3_title') }}</b> <br> <span
+                                                    class="text-muted text-small">{{ __('messages.proj_3_desc') }}</span></a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tambahkan lebih banyak jika ada -->
+                            <div class="swiper-slide">
+                                <div class="blog-item style-two">
+                                    <div class="image">
+                                        <img src="assets/images/projects/project-1.webp" alt="{{ __('messages.alt_project') }}"
+                                            class="project-img-modal cursor-pointer">
+                                    </div>
+                                    <div class="px-2 py-2">
+                                        <h5><a href="javascript:void(0)"><b>{{ __("messages.proj_1_title") }}</b> <br> <span
+                                                    class="text-muted text-small">{{ __("messages.proj_1_desc") }}</span></a>
                                         </h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Swiper Pagination -->
+                        <div class="swiper-pagination mt-40"></div>
                     </div>
                 </div>
             </div>
@@ -675,10 +679,10 @@
                 <div class="col-lg-6">
                     <div class="faq-image-part rmb-55 wow fadeInUp delay-0-2s">
                         <div class="image-one">
-                            <img src="{{ asset('/assets/images/about/cta2.webp') }}" alt="FAQ">
+                            <img src="{{ asset('/assets/images/about/cta2.webp') }}" alt="{{ __('messages.alt_faq') }}">
                         </div>
                         <div class="image-two">
-                            <img src="{{ asset('/assets/images/about/cta1.webp') }}" alt="FAQ">
+                            <img src="{{ asset('/assets/images/about/cta1.webp') }}" alt="{{ __('messages.alt_faq') }}">
                         </div>
                         <div class="square-shape"></div>
                     </div>
@@ -686,24 +690,20 @@
                 <div class="col-lg-6">
                     <div class="faq-content-part rel z-2">
                         <div class="section-title mb-40 wow fadeInUp delay-0-4s">
-                            <h2>Professional Solutions For Your <span>Digital Product</span> Development</h2>
+                            <h2>{!! __('messages.faq_title') !!}</h2>
                         </div>
                         <div class="accordion wow fadeInUp delay-0-4s" id="faq-accordion">
                             <div class="accordion-item">
                                 <h5 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne">
-                                        What services do you provide ?
+                                        {{ __('messages.q1') }}
                                     </button>
                                 </h5>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
-                                        <p>
-                                            We offer end-to-end digital solutions — including website development, custom
-                                            business systems, web apps, and ongoing technical support. Every project is
-                                            tailored to meet your specific business needs.
-                                        </p>
+                                        <p>{{ __('messages.a1') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -711,17 +711,12 @@
                                 <h5 class="accordion-header">
                                     <button class="accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo">
-                                        How long does a typical project take ?
+                                        {{ __('messages.q2') }}
                                     </button>
                                 </h5>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#faq-accordion">
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
-                                        <p>
-                                            Project duration depends on its complexity. A standard website usually takes
-                                            around 2–4 weeks, while custom systems or apps may take 1–2 months from concept
-                                            to launch.
-                                        </p>
+                                        <p>{{ __('messages.a2') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -729,16 +724,12 @@
                                 <h5 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree">
-                                        Can you create a design based on my business idea ?
+                                        {{ __('messages.q3') }}
                                     </button>
                                 </h5>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#faq-accordion">
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
-                                        <p>
-                                            Yes. We can help you from the very beginning — starting with idea consultation,
-                                            UI/UX design, and development until your product goes live.
-                                        </p>
+                                        <p>{{ __('messages.a3') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -746,16 +737,12 @@
                                 <h5 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour">
-                                        Do you offer maintenance or support after project delivery ?
+                                        {{ __('messages.q4') }}
                                     </button>
                                 </h5>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    data-bs-parent="#faq-accordion">
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
-                                        <p>
-                                            Absolutely. We provide post-launch support, updates, and maintenance to ensure
-                                            your website or app runs efficiently and remains secure.
-                                        </p>
+                                        <p>{{ __('messages.a4') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -763,17 +750,12 @@
                                 <h5 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive">
-                                        How can I start working with you ?
+                                        {{ __('messages.q5') }}
                                     </button>
                                 </h5>
-                                <div id="collapseFive" class="accordion-collapse collapse"
-                                    data-bs-parent="#faq-accordion">
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
-                                        <p>
-                                            Simply reach out through our contact form, email, or WhatsApp. We’ll discuss
-                                            your goals, provide recommendations, and prepare a custom proposal for your
-                                            project.
-                                        </p>
+                                        <p>{{ __('messages.a5') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -800,51 +782,49 @@
                 <div class="col-lg-4">
                     <div class="contact-content-part pt-5 rpt-0 rmb-55 wow fadeInUp delay-0-2s">
                         <div class="section-title mb-40">
-                            <span class="sub-title mb-15">Get In Touch</span>
-                            <h2>Let’s Talk About Your <span>Next Projects</span></h2>
-                            <p>
-                                Transform your ideas into powerful, scalable products with trusted expertise and
-                                real-world experience.
-                            </p>
+                            <span class="sub-title mb-15">{{ __('messages.contact_subtitle') }}</span>
+                            <h2>{!! __('messages.contact_title') !!}</h2>
+                            <p>{{ __('messages.contact_desc') }}</p>
                         </div>
                         <ul class="list-style-two">
-                            <li>3+ Years of Experience</li>
-                            <li>Fullstack Developer</li>
-                            <li>Smart & Scalable Digital Solutions</li>
+                            <li>{{ __('messages.exp_years') }}</li>
+                            <li>{{ __('messages.hero_job') }}</li>
+                            <li>{{ __('messages.special_sol') }}</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="contact-form contact-form-wrap form-style-one wow fadeInUp delay-0-4s">
                         <form id="contactForm" class="contactForm" onsubmit="sendToWhatsApp(event)">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-7">
                                     <div class="form-group">
-                                        <label for="name">Full Name</label>
+                                        <label for="name">{{ __('messages.full_name') }}</label>
                                         <input type="text" id="name" name="name" class="form-control"
-                                            placeholder="Insert your Full Name" required>
+                                            placeholder="{{ __('messages.name_placeholder') }}" required>
                                         <label for="name" class="for-icon"><i class="far fa-user"></i></label>
                                     </div>
                                 </div>
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <label for="phone_number">Phone Number</label>
+                                        <label for="phone_number">{{ __('messages.phone_number') }}</label>
                                         <input type="number" id="phone_number" name="phone_number" class="form-control"
-                                            placeholder="Insert your Phone Number" required>
+                                            placeholder="{{ __('messages.phone_placeholder') }}" required>
                                         <label for="phone_number" class="for-icon"><i class="far fa-phone"></i></label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message" class="form-control" rows="5" placeholder="Create Write Message"
-                                            required></textarea>
+                                        <label for="message">{{ __('messages.message_label') }}</label>
+                                        <textarea name="message" id="message" class="form-control" rows="5"
+                                            placeholder="{{ __('messages.message_placeholder') }}" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group mb-0">
                                         <button type="submit" class="theme-btn">
-                                            Send Us Message <i class="far fa-angle-right"></i>
+                                            {{ __('messages.send_message') }} <i class="far fa-angle-right"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -871,26 +851,25 @@
             <div class="row justify-content-center">
                 <div class="col-xl-12">
                     <div class="section-title text-center pt-5 mb-65 wow fadeInUp delay-0-2s">
-                        <h6>Trusted by Global Clients — <span>Successful Projects Delivered</span></h6>
+                        <h6>{!! __('messages.client_title') !!}</h6>
                     </div>
                 </div>
             </div>
             <div class="client-logo-wrap">
                 <a class="client-logo-item wow fadeInUp delay-0-2s"">
-                    <img src="{{ asset('/assets/images/client-logos/bumikartini.webp') }}" alt="Client Logo">
+                        <img src=" {{ asset('/assets/images/client-logos/bumikartini.webp') }}" alt="{{ __('messages.alt_client') }}">
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-3s">
-                    <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" alt="Client Logo">
+                    <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" alt="{{ __('messages.alt_client') }}">
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-4s">
-                    <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" alt="Client Logo">
+                    <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" alt="{{ __('messages.alt_client') }}">
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-5s">
-                    <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" width="90%" alt="Client Logo">
+                    <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" width="90%" alt="{{ __('messages.alt_client') }}">
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-6s">
-                    <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" width="120%"
-                        alt="Client Logo">
+                    <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" width="120%" alt="{{ __('messages.alt_client') }}">
                 </a>
             </div>
         </div>
@@ -907,4 +886,149 @@
     <!-- footer area -->
     @include('frontend.includes.footers.footer')
     <!-- footer area end -->
+    <!-- Full Screen Image Modal -->
+    <div id="fullScreenModal" class="full-screen-modal">
+        <span class="close-modal">&times;</span>
+        <img class="full-screen-content" id="imgFull">
+    </div>
+
+    <!-- Swiper and Modal CSS -->
+    <style>
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .mt-40 {
+            margin-top: 40px;
+        }
+
+        .project-swiper {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 50px;
+        }
+
+        .swiper-pagination-bullet {
+            background: var(--primary-color) !important;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            width: 20px;
+            border-radius: 5px;
+        }
+
+        /* Full Screen Modal Style */
+        .full-screen-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            padding-top: 40px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .full-screen-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 10px;
+            animation: zoom 0.3s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            z-index: 10001;
+        }
+
+        .close-modal:hover {
+            color: var(--primary-color);
+        }
+
+        @media only screen and (max-width: 700px) {
+            .full-screen-content {
+                width: 95%;
+                margin-top: 25%;
+            }
+        }
+    </style>
+
+    <!-- Swiper and Modal JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Swiper
+            const swiper = new Swiper('.project-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                }
+            });
+
+            // Modal Logic
+            const modal = document.getElementById("fullScreenModal");
+            const modalImg = document.getElementById("imgFull");
+            const images = document.querySelectorAll(".project-img-modal");
+            const closeBtn = document.querySelector(".close-modal");
+
+            images.forEach(img => {
+                img.onclick = function () {
+                    modal.style.display = "flex";
+                    modal.style.alignItems = "center";
+                    modalImg.src = this.src;
+                    document.body.style.overflow = "hidden"; // Disable scroll
+                }
+            });
+
+            closeBtn.onclick = function () {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto"; // Enable scroll
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            }
+        });
+    </script>
 @endsection
