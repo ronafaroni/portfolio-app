@@ -7,7 +7,7 @@
     <!-- header area end -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="main-hero-area pt-150 pb-100 rel z-1">
+    <section id="home" class="main-hero-area pt-150 pb-80 rel z-1">
         <div class="container container-1620">
             <div class="row align-items-center">
                 <div class="col-lg-1"></div>
@@ -18,43 +18,103 @@
                         <h3>{{ __('messages.hero_job') }}</h3>
                         <p>{{ __('messages.hero_desc') }}</p>
 
-                        <div class="hero-btns">
+                        <div class="hero-btns d-flex align-items-center flex-wrap gap-3 mt-30">
                             <a href="https://wa.me/6285226118681?text={{ urlencode(__('messages.wa_message')) }}"
-                                target="_blank" class="theme-btn">
-                                {{ __('messages.hire_me') }} <i class="far fa-angle-right"></i>
+                                target="_blank" rel="noopener noreferrer" class="theme-btn theme-btn-solid">
+                                <span>{{ __('messages.hire_me') }}</span>
+                                <i class="fas fa-paper-plane ms-2"></i>
                             </a>
 
-                            <a href="{{ route('download') }}" target="_blank"
-                                class="read-more">{{ __('messages.download_cv') }} <i class="far fa-angle-right"></i></a>
+                            <a href="{{ route('download') }}"
+                                class="theme-btn theme-btn-line">
+                                <span>{{ __('messages.download_cv') }}</span>
+                                <i class="far fa-arrow-down-to-line ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-lg-3 col-sm-5 order-lg-3">
-                    <div class="hero-counter-wrap ms-lg-auto rmb-55 wow fadeInUp delay-0-4s">
-                        <div class="counter-item counter-text-wrap">
-                            <span class="count-text plus" data-speed="3000" data-stop="13">0</span>
-                            <span class="counter-title">Years Of Experience</span>
-                        </div>
-                        <div class="counter-item counter-text-wrap">
-                            <span class="count-text k-plus" data-speed="3000" data-stop="8">0</span>
-                            <span class="counter-title">Project Complete</span>
-                        </div>
-                        <div class="counter-item counter-text-wrap">
-                            <span class="count-text percent" data-speed="3000" data-stop="99">0</span>
-                            <span class="counter-title">Client Satisfactions</span>
-                        </div>
-                    </div>
-                </div> --}}
                 <div class="col-lg-4">
-                    <div class="wow fadeIn delay-0-3s">
-                        {{-- <div class="bg-circle"></div> --}}
+                    <div class="wow fadeIn delay-0-3s hero-image-wrapper">
                         <img src="{{ asset('/assets/images/hero/founder.webp') }}" alt="{{ __('messages.alt_author') }}">
-                        {{-- <div class="progress-shape">
-                            <img src="{{ asset('/assets/images/hero/progress-shape.webp') }}" alt="Progress">
-                        </div> --}}
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
+            </div>
+        </div>
+
+        <!-- Client Marquee inside Hero (Aligned with Header Container) -->
+        <div class="container">
+            <div class="hero-client-marquee-wrap mt-70 rmt-40">
+                <div class="text-center mb-25 wow fadeInUp delay-0-2s">
+                    <h6 class="text-muted mb-0" style="font-size: 15px; font-weight: 500; letter-spacing: 0.5px;">{!! __('messages.client_title') !!}</h6>
+                </div>
+                <div class="client-marquee-container wow fadeInUp delay-0-3s" style="padding: 10px 0 10px;">
+                    <div class="client-marquee-track">
+                        <!-- Set 1 (10 Client Logos) -->
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/bumikartini.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" class="logo-sigawai" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/lakoo.webp') }}" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/openflow.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/webelio.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/awshara.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/webstore.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                        </div>
+
+                        <!-- Set 2 (Duplicated for Seamless Infinite Loop) -->
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/bumikartini.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" class="logo-sigawai" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/lakoo.webp') }}" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/openflow.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/webelio.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/awshara.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                        <div class="client-marquee-item">
+                            <img src="{{ asset('/assets/images/client-logos/webstore.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="bg-lines">
@@ -79,38 +139,24 @@
                                 <h2>{!! __('messages.about_title') !!}</h2>
                                 <p>{{ __('messages.about_desc') }}</p>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <ul class="list-style-one wow fadeInUp delay-0-2s">
-                                        <li>{{ __('messages.service_list_1') }}</li>
-                                        <li>{{ __('messages.service_list_2') }}</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <ul class="list-style-one wow fadeInUp delay-0-2s">
-                                        <li>{{ __('messages.service_list_3') }}</li>
-                                        <li>{{ __('messages.service_list_4') }}</li>
-                                    </ul>
-                                </div>
-
-
-                                <div class="about-info-box mt-25 wow fadeInUp delay-0-2s">
-                                    <div class="info-box-item">
-                                        <i class="far fa-envelope"></i>
-                                        <div class="content">
-                                            <span>{{ __('messages.email_us') }}</span><br>
-                                            <a href="{{ url('mailto:ronafaroni95@gmail.com') }}">ronafaroni95@gmail.com</a>
-                                        </div>
+                            <div class="about-info-box mt-35 wow fadeInUp delay-0-2s">
+                                <div class="info-box-item">
+                                    <i class="far fa-map-marker-alt"></i>
+                                    <div class="content">
+                                        <span>{{ __('messages.location_label') }}</span><br>
+                                        <a href="https://maps.google.com/?q=Jepara,+Indonesia" target="_blank" rel="noopener noreferrer">
+                                            {{ __('messages.location_val') }}
+                                        </a>
                                     </div>
-                                    <div class="info-box-item">
-                                        <i class="far fa-phone"></i>
-                                        <div class="content">
-                                            <span>{{ __('messages.make_call') }}</span><br>
-                                            <a href="https://wa.me/6285226118681?text={{ urlencode(__('messages.wa_message')) }}"
-                                                target="_blank">
-                                                085226118681
-                                            </a>
-                                        </div>
+                                </div>
+                                <div class="info-box-item">
+                                    <i class="far fa-phone"></i>
+                                    <div class="content">
+                                        <span>{{ __('messages.make_call') }}</span><br>
+                                        <a href="https://wa.me/6285226118681?text={{ urlencode(__('messages.wa_message')) }}"
+                                            target="_blank" rel="noopener noreferrer">
+                                            085226118681
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -119,15 +165,12 @@
                     <div class="col-lg-5">
                         <div class="about-image-part wow fadeInUp delay-0-3s">
                             <img src="{{ asset('/assets/images/about/aboutme.webp') }}" alt="{{ __('messages.about_subtitle') }}">
-                            {{-- <div class="about-btn btn-one wow fadeInRight delay-0-4s">
-                                <img src="{{ asset('/assets/images/about/btn-image1.webp') }}" alt="Image">
-                                <h6>Experience Products</h6>
-                                <i class="fas fa-arrow-right"></i>
-                            </div> --}}
-                            <div class="about-btn btn-two wow fadeInRight delay-0-5s">
-                                <img src="{{ asset('/assets/images/about/aboutme-icon1.webp') }}" width="35px" alt="{{ __('messages.alt_shape') }}">
-                                <h6>{{ __('messages.page_title') }}</h6>
-                                <i class="fas fa-arrow-right"></i>
+                            <div class="experience-glass-badge wow fadeInRight delay-0-5s">
+                                <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+                                <div class="exp-text">
+                                    <h4>{{ __('messages.badge_exp_years') }}</h4>
+                                    <p>{{ __('messages.badge_exp_title') }}</p>
+                                </div>
                             </div>
                             <div class="dot-shape">
                                 <img src="{{ asset('/assets/images/shape/shape.webp') }}" width="30px" alt="{{ __('messages.alt_shape') }}">
@@ -147,35 +190,85 @@
     </section>
     <!-- About Area end -->
 
-    <!-- Resume Area start -->
-    <section id="resume" class="resume-area pt-130 rpt-100 rel z-1">
+    <!-- Resume Area start (Interactive Work Experience & Education Timeline) -->
+    <section id="resume" class="resume-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6">
-                    <div class="what-i-do-images rmb-55 wow fadeInUp delay-0-2s">
-                        <div class="first-image">
-                            <img src="{{ asset('/assets/images/about/about-1.webp') }}" alt="{{ __('messages.what_i_do') }}">
-                        </div>
-                        {{-- <div class="last-image">
-                            <img src="{{ asset('/assets/images/about/what-i-do2.jpg') }}" alt="What I do">
-                        </div> --}}
-                        <div class="icon first"><i class="flaticon-asterisk-1"></i></div>
-                        <div class="icon last"><i class="flaticon-asterisk-1"></i></div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+                        <span class="sub-title mb-15">{{ __('messages.resume') }}</span>
+                        <h2>{!! __('messages.what_i_do_title') !!}</h2>
+                        <p>{{ __('messages.what_i_do_desc') }}</p>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-6">
-                    <div class="what-i-do-content wow fadeInUp delay-0-4s">
-                        <div class="section-title mb-40">
-                            <span class="sub-title mb-15">{{ __('messages.what_i_do') }}</span>
-                            <h2>{!! __('messages.what_i_do_title') !!}</h2>
-                            <p>{{ __('messages.what_i_do_desc') }}</p>
-                        </div>
-                        <ul class="list-style-two pb-50">
-                            <li>{{ __('messages.exp_years') }}</li>
-                            <li>{{ __('messages.hero_job') }}</li>
-                            <li>{{ __('messages.special_sol') }}</li>
-                        </ul>
+            </div>
 
+            <div class="row g-5">
+                <!-- Work Experience Column -->
+                <div class="col-lg-6 wow fadeInUp delay-0-2s">
+                    <div class="timeline-header-minimal mb-35">
+                        <h4><i class="far fa-briefcase text-primary me-2"></i> {{ __('messages.experience_title') }}</h4>
+                    </div>
+                    <div class="timeline-minimal-list">
+                        <!-- Item 1 -->
+                        <div class="timeline-minimal-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-meta mb-2">
+                                <span class="timeline-period">{{ __('messages.exp_1_years') }}</span>
+                                <span class="timeline-org">{{ __('messages.exp_1_company') }}</span>
+                            </div>
+                            <h5 class="timeline-role">{{ __('messages.exp_1_role') }}</h5>
+                            <p class="timeline-desc">{{ __('messages.exp_1_desc') }}</p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="timeline-minimal-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-meta mb-2">
+                                <span class="timeline-period">{{ __('messages.exp_2_years') }}</span>
+                                <span class="timeline-org">{{ __('messages.exp_2_company') }}</span>
+                            </div>
+                            <h5 class="timeline-role">{{ __('messages.exp_2_role') }}</h5>
+                            <p class="timeline-desc">{{ __('messages.exp_2_desc') }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications Column -->
+                <div class="col-lg-6 wow fadeInUp delay-0-4s">
+                    <div class="timeline-header-minimal mb-35">
+                        <h4><i class="far fa-graduation-cap text-primary me-2"></i> {{ __('messages.education_title') }}</h4>
+                    </div>
+                    <div class="timeline-minimal-list">
+                        <!-- Education -->
+                        <div class="timeline-minimal-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-meta mb-2">
+                                <span class="timeline-period">{{ __('messages.edu_1_years') }}</span>
+                                <span class="timeline-org">{{ __('messages.edu_1_institution') }}</span>
+                            </div>
+                            <h5 class="timeline-role">{{ __('messages.edu_1_degree') }}</h5>
+                            <p class="timeline-desc">{{ __('messages.edu_1_desc') }}</p>
+                        </div>
+                        <!-- Certificate 1 -->
+                        <div class="timeline-minimal-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-meta mb-2">
+                                <span class="timeline-period">{{ __('messages.edu_2_years') }}</span>
+                                <span class="timeline-org">{{ __('messages.edu_2_institution') }}</span>
+                            </div>
+                            <h5 class="timeline-role">{{ __('messages.edu_2_degree') }}</h5>
+                            <p class="timeline-desc">{{ __('messages.edu_2_desc') }}</p>
+                        </div>
+                        <!-- Certificate 2 -->
+                        <div class="timeline-minimal-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-meta mb-2">
+                                <span class="timeline-period">{{ __('messages.edu_3_years') }}</span>
+                                <span class="timeline-org">{{ __('messages.edu_3_institution') }}</span>
+                            </div>
+                            <h5 class="timeline-role">{{ __('messages.edu_3_degree') }}</h5>
+                            <p class="timeline-desc">{{ __('messages.edu_3_desc') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -202,64 +295,94 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="service-item wow fadeInUp delay-0-2s">
-                        <div class="number">01.</div>
-                        <div class="content">
+                <!-- Service 1 -->
+                <div class="col-lg-6 col-md-6 mb-30">
+                    <div class="service-card-modern wow fadeInUp delay-0-2s">
+                        <div class="service-card-top d-flex align-items-center justify-content-between mb-25">
+                            <div class="service-icon-box">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <span class="service-number-badge">01</span>
+                        </div>
+                        <div class="service-card-body">
                             <h4>{{ __('messages.service_1_title') }}</h4>
                             <p>{{ __('messages.service_1_desc') }}</p>
                         </div>
-                        <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="service-item wow fadeInUp delay-0-4s">
-                        <div class="number">02.</div>
-                        <div class="content">
+                <!-- Service 2 -->
+                <div class="col-lg-6 col-md-6 mb-30">
+                    <div class="service-card-modern wow fadeInUp delay-0-3s">
+                        <div class="service-card-top d-flex align-items-center justify-content-between mb-25">
+                            <div class="service-icon-box">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <span class="service-number-badge">02</span>
+                        </div>
+                        <div class="service-card-body">
                             <h4>{{ __('messages.service_2_title') }}</h4>
                             <p>{{ __('messages.service_2_desc') }}</p>
                         </div>
-                        <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="service-item wow fadeInUp delay-0-2s">
-                        <div class="number">03.</div>
-                        <div class="content">
+                <!-- Service 3 -->
+                <div class="col-lg-6 col-md-6 mb-30">
+                    <div class="service-card-modern wow fadeInUp delay-0-4s">
+                        <div class="service-card-top d-flex align-items-center justify-content-between mb-25">
+                            <div class="service-icon-box">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <span class="service-number-badge">03</span>
+                        </div>
+                        <div class="service-card-body">
                             <h4>{{ __('messages.service_3_title') }}</h4>
                             <p>{{ __('messages.service_3_desc') }}</p>
                         </div>
-                        <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="service-item wow fadeInUp delay-0-4s">
-                        <div class="number">04.</div>
-                        <div class="content">
+                <!-- Service 4 -->
+                <div class="col-lg-6 col-md-6 mb-30">
+                    <div class="service-card-modern wow fadeInUp delay-0-2s">
+                        <div class="service-card-top d-flex align-items-center justify-content-between mb-25">
+                            <div class="service-icon-box">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <span class="service-number-badge">04</span>
+                        </div>
+                        <div class="service-card-body">
                             <h4>{{ __('messages.service_4_title') }}</h4>
                             <p>{{ __('messages.service_4_desc') }}</p>
                         </div>
-                        <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="service-item wow fadeInUp delay-0-2s">
-                        <div class="number">05.</div>
-                        <div class="content">
+                <!-- Service 5 -->
+                <div class="col-lg-6 col-md-6 mb-30">
+                    <div class="service-card-modern wow fadeInUp delay-0-3s">
+                        <div class="service-card-top d-flex align-items-center justify-content-between mb-25">
+                            <div class="service-icon-box">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="service-number-badge">05</span>
+                        </div>
+                        <div class="service-card-body">
                             <h4>{{ __('messages.service_5_title') }}</h4>
                             <p>{{ __('messages.service_5_desc') }}</p>
                         </div>
-                        <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="service-item wow fadeInUp delay-0-4s">
-                        <div class="number">06.</div>
-                        <div class="content">
+                <!-- Service 6 -->
+                <div class="col-lg-6 col-md-6 mb-30">
+                    <div class="service-card-modern wow fadeInUp delay-0-4s">
+                        <div class="service-card-top d-flex align-items-center justify-content-between mb-25">
+                            <div class="service-icon-box">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span class="service-number-badge">06</span>
+                        </div>
+                        <div class="service-card-body">
                             <h4>{{ __('messages.service_6_title') }}</h4>
                             <p>{{ __('messages.service_6_desc') }}</p>
                         </div>
-                        <a class="details-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -286,7 +409,6 @@
                                 <h2>{!! __('messages.skills_title') !!}</h2>
                                 <p>{{ __('messages.skills_desc') }}</p>
                             </div>
-                            {{-- <a class="theme-btn">Learn More <i class="far fa-angle-right"></i></a> --}}
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -297,7 +419,6 @@
                                         <img src="{{ asset('/assets/images/skills/laravel.webp') }}" width="43%"
                                             alt="{{ __('messages.alt_skill') }}">
                                         <h5>Laravel</h5>
-                                        {{-- <span class="percent">96%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -305,7 +426,6 @@
                                         <img src="{{ asset('/assets/images/skills/midtrans.webp') }}" width="42%"
                                             alt="{{ __('messages.alt_skill') }}">
                                         <h5>Midtrans</h5>
-                                        {{-- <span class="percent">83%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -313,7 +433,6 @@
                                         <img src="{{ asset('/assets/images/skills/tailwind.webp') }}" width="68%"
                                             alt="{{ __('messages.alt_skill') }}">
                                         <h5>Tailwind</h5>
-                                        {{-- <span class="percent">43%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -321,35 +440,30 @@
                                         <img src="{{ asset('/assets/images/skills/javascript.webp') }}" width="42%"
                                             alt="{{ __('messages.alt_skill') }}">
                                         <h5>Javascript</h5>
-                                        {{-- <span class="percent">74%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-2s">
                                         <img src="{{ asset('/assets/images/skills/vuejs.webp') }}" width="54%" alt="{{ __('messages.alt_skill') }}">
                                         <h5>Vue</h5>
-                                        {{-- <span class="percent">95%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-3s">
                                         <img src="{{ asset('/assets/images/skills/react.webp') }}" width="50%" alt="{{ __('messages.alt_skill') }}">
                                         <h5>React</h5>
-                                        {{-- <span class="percent">46%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-4s">
                                         <img src="{{ asset('/assets/images/skills/nextjs.webp') }}" width="45%" alt="{{ __('messages.alt_skill') }}">
                                         <h5>Next Js</h5>
-                                        {{-- <span class="percent">22%</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-5s">
                                         <img src="{{ asset('/assets/images/skills/github.webp') }}" width="45%" alt="{{ __('messages.alt_skill') }}">
                                         <h5>GitHub</h5>
-                                        {{-- <span class="percent">84%</span> --}}
                                     </div>
                                 </div>
                             </div>
@@ -380,68 +494,124 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 wow fadeInUp delay-0-2s">
                     <div class="swiper project-swiper">
                         <div class="swiper-wrapper">
                             <!-- Project 1 -->
                             <div class="swiper-slide">
-                                <div class="blog-item style-two">
-                                    <div class="image">
-                                        <img src="assets/images/projects/project-1.webp" alt="{{ __('messages.proj_1_title') }}"
+                                <div class="project-card-modern">
+                                    <div class="image rel">
+                                        <span class="project-category-badge">{{ __('messages.proj_1_cat') }}</span>
+                                        <img src="{{ asset('/assets/images/projects/project-1.webp') }}" alt="{{ __('messages.proj_1_title') }}"
                                             class="project-img-modal cursor-pointer">
                                     </div>
-                                    <div class="px-2 py-2">
-                                        <h5><a href="javascript:void(0)"><b>{{ __('messages.proj_1_title') }}</b> <br> <span
-                                                    class="text-muted text-small">{{ __('messages.proj_1_desc') }}</span></a>
-                                        </h5>
+                                    <div class="project-card-content px-3 py-3">
+                                        <div class="project-tech-tags mb-10">
+                                            <span class="tech-tag">Laravel</span>
+                                            <span class="tech-tag">MySQL</span>
+                                            <span class="tech-tag">Bootstrap</span>
+                                        </div>
+                                        <h5><a href="javascript:void(0)" class="project-img-modal"><b>{{ __('messages.proj_1_title') }}</b></a></h5>
+                                        <p class="text-muted text-small mb-15">{{ __('messages.proj_1_desc') }}</p>
+                                        <div class="project-action-btns d-flex align-items-center justify-content-between">
+                                            <button type="button" class="btn-preview-modal project-img-modal">
+                                                <i class="far fa-eye me-1"></i> {{ __('messages.view_demo') }}
+                                            </button>
+                                            <a href="https://wa.me/6285226118681?text={{ urlencode(sprintf(__('messages.discuss_proj_msg'), __('messages.proj_1_title'))) }}" 
+                                               target="_blank" rel="noopener noreferrer" class="btn-discuss-project">
+                                                <i class="fab fa-whatsapp me-1"></i> {{ __('messages.discuss_project') }}
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Project 2 -->
                             <div class="swiper-slide">
-                                <div class="blog-item style-two">
-                                    <div class="image">
-                                        <img src="assets/images/projects/project-2.webp" alt="{{ __('messages.proj_2_title') }}"
+                                <div class="project-card-modern">
+                                    <div class="image rel">
+                                        <span class="project-category-badge">{{ __('messages.proj_2_cat') }}</span>
+                                        <img src="{{ asset('/assets/images/projects/project-2.webp') }}" alt="{{ __('messages.proj_2_title') }}"
                                             class="project-img-modal cursor-pointer">
                                     </div>
-                                    <div class="px-2 py-2">
-                                        <h5><a href="javascript:void(0)"><b>{{ __('messages.proj_2_title') }}</b> <br> <span
-                                                    class="text-muted text-small">{{ __('messages.proj_2_desc') }}</span></a>
-                                        </h5>
+                                    <div class="project-card-content px-3 py-3">
+                                        <div class="project-tech-tags mb-10">
+                                            <span class="tech-tag">Tailwind CSS</span>
+                                            <span class="tech-tag">Chart.js</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                        <h5><a href="javascript:void(0)" class="project-img-modal"><b>{{ __('messages.proj_2_title') }}</b></a></h5>
+                                        <p class="text-muted text-small mb-15">{{ __('messages.proj_2_desc') }}</p>
+                                        <div class="project-action-btns d-flex align-items-center justify-content-between">
+                                            <button type="button" class="btn-preview-modal project-img-modal">
+                                                <i class="far fa-eye me-1"></i> {{ __('messages.view_demo') }}
+                                            </button>
+                                            <a href="https://wa.me/6285226118681?text={{ urlencode(sprintf(__('messages.discuss_proj_msg'), __('messages.proj_2_title'))) }}" 
+                                               target="_blank" rel="noopener noreferrer" class="btn-discuss-project">
+                                                <i class="fab fa-whatsapp me-1"></i> {{ __('messages.discuss_project') }}
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Project 3 -->
                             <div class="swiper-slide">
-                                <div class="blog-item style-two">
-                                    <div class="image">
-                                        <img src="assets/images/projects/project-3.webp" alt="{{ __('messages.proj_3_title') }}"
+                                <div class="project-card-modern">
+                                    <div class="image rel">
+                                        <span class="project-category-badge">{{ __('messages.proj_3_cat') }}</span>
+                                        <img src="{{ asset('/assets/images/projects/project-3.webp') }}" alt="{{ __('messages.proj_3_title') }}"
                                             class="project-img-modal cursor-pointer">
                                     </div>
-                                    <div class="px-2 py-2">
-                                        <h5><a href="javascript:void(0)"><b>{{ __('messages.proj_3_title') }}</b> <br> <span
-                                                    class="text-muted text-small">{{ __('messages.proj_3_desc') }}</span></a>
-                                        </h5>
+                                    <div class="project-card-content px-3 py-3">
+                                        <div class="project-tech-tags mb-10">
+                                            <span class="tech-tag">Laravel</span>
+                                            <span class="tech-tag">REST API</span>
+                                            <span class="tech-tag">MySQL</span>
+                                        </div>
+                                        <h5><a href="javascript:void(0)" class="project-img-modal"><b>{{ __('messages.proj_3_title') }}</b></a></h5>
+                                        <p class="text-muted text-small mb-15">{{ __('messages.proj_3_desc') }}</p>
+                                        <div class="project-action-btns d-flex align-items-center justify-content-between">
+                                            <button type="button" class="btn-preview-modal project-img-modal">
+                                                <i class="far fa-eye me-1"></i> {{ __('messages.view_demo') }}
+                                            </button>
+                                            <a href="https://wa.me/6285226118681?text={{ urlencode(sprintf(__('messages.discuss_proj_msg'), __('messages.proj_3_title'))) }}" 
+                                               target="_blank" rel="noopener noreferrer" class="btn-discuss-project">
+                                                <i class="fab fa-whatsapp me-1"></i> {{ __('messages.discuss_project') }}
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Tambahkan lebih banyak jika ada -->
+                            <!-- Project 4 -->
                             <div class="swiper-slide">
-                                <div class="blog-item style-two">
-                                    <div class="image">
-                                        <img src="assets/images/projects/project-1.webp" alt="{{ __('messages.alt_project') }}"
+                                <div class="project-card-modern">
+                                    <div class="image rel">
+                                        <span class="project-category-badge">{{ __('messages.proj_4_cat') }}</span>
+                                        <img src="{{ asset('/assets/images/projects/project-4.webp') }}" alt="{{ __('messages.proj_4_title') }}"
                                             class="project-img-modal cursor-pointer">
                                     </div>
-                                    <div class="px-2 py-2">
-                                        <h5><a href="javascript:void(0)"><b>{{ __("messages.proj_1_title") }}</b> <br> <span
-                                                    class="text-muted text-small">{{ __("messages.proj_1_desc") }}</span></a>
-                                        </h5>
+                                    <div class="project-card-content px-3 py-3">
+                                        <div class="project-tech-tags mb-10">
+                                            <span class="tech-tag">Laravel</span>
+                                            <span class="tech-tag">Midtrans</span>
+                                            <span class="tech-tag">Tailwind</span>
+                                        </div>
+                                        <h5><a href="javascript:void(0)" class="project-img-modal"><b>{{ __('messages.proj_4_title') }}</b></a></h5>
+                                        <p class="text-muted text-small mb-15">{{ __('messages.proj_4_desc') }}</p>
+                                        <div class="project-action-btns d-flex align-items-center justify-content-between">
+                                            <button type="button" class="btn-preview-modal project-img-modal">
+                                                <i class="far fa-eye me-1"></i> {{ __('messages.view_demo') }}
+                                            </button>
+                                            <a href="https://wa.me/6285226118681?text={{ urlencode(sprintf(__('messages.discuss_proj_msg'), __('messages.proj_4_title'))) }}" 
+                                               target="_blank" rel="noopener noreferrer" class="btn-discuss-project">
+                                                <i class="fab fa-whatsapp me-1"></i> {{ __('messages.discuss_project') }}
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Swiper Pagination -->
-                        <div class="swiper-pagination mt-40"></div>
+                        <div class="swiper-pagination project-swiper-pagination mt-40"></div>
                     </div>
                 </div>
             </div>
@@ -456,235 +626,16 @@
     </section>
     <!-- Projects Area end -->
 
-    <!-- SLIDER ATAS - BERGERAK KE KANAN -->
-    {{-- <div class="tools-slideshow mt-50" style="overflow:hidden;position:relative;">
-        <div class="slider slider-right">
-            <div class="slide-track">
-                <!-- isi asli -->
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-2ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-3ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-4ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-5ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-6ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-7ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-8ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-9ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
-    <!-- SLIDER BAWAH - BERGERAK KE KIRI -->
-    {{-- <div class="tools-slideshow mt-30" style="overflow:hidden;position:relative;">
-        <div class="slider slider-left">
-            <div class="slide-track">
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-2ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-3ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-4ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-5ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-6ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-7ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-
-
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-8ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 item design marketing graphics">
-                    <div class="project-item style-three wow fadeInUp delay-0-9ms animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="project-image">
-                            <img src="assets/images/projects/project-1.webp" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <h4><a href="project-details.html" class="text-white">Mobile Application Design</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
 
     <!-- FAQs Area start -->
     <section id="faqs" class="faqs-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="faq-image-part rmb-55 wow fadeInUp delay-0-2s">
-                        <div class="image-one">
-                            <img src="{{ asset('/assets/images/about/cta2.webp') }}" alt="{{ __('messages.alt_faq') }}">
-                        </div>
-                        <div class="image-two">
+                    <div class="faq-single-image-wrap rmb-55 wow fadeInUp delay-0-2s">
+                        <div class="faq-single-image-card">
                             <img src="{{ asset('/assets/images/about/cta1.webp') }}" alt="{{ __('messages.alt_faq') }}">
                         </div>
-                        <div class="square-shape"></div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -696,11 +647,11 @@
                             <div class="accordion-item">
                                 <h5 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne">
+                                        data-bs-target="#collapseOne" aria-expanded="false">
                                         {{ __('messages.q1') }}
                                     </button>
                                 </h5>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                <div id="collapseOne" class="accordion-collapse collapse"
                                     data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
                                         <p>{{ __('messages.a1') }}</p>
@@ -709,8 +660,8 @@
                             </div>
                             <div class="accordion-item">
                                 <h5 class="accordion-header">
-                                    <button class="accordion-button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false">
                                         {{ __('messages.q2') }}
                                     </button>
                                 </h5>
@@ -778,8 +729,8 @@
     <!-- Contact Area start -->
     <section id="contact" class="contact-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
                     <div class="contact-content-part pt-5 rpt-0 rmb-55 wow fadeInUp delay-0-2s">
                         <div class="section-title mb-40">
                             <span class="sub-title mb-15">{{ __('messages.contact_subtitle') }}</span>
@@ -793,12 +744,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-7">
                     <div class="contact-form contact-form-wrap form-style-one wow fadeInUp delay-0-4s">
                         <form id="contactForm" class="contactForm" onsubmit="sendToWhatsApp(event)">
                             @csrf
                             <div class="row">
-                                <div class="col-md-7">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="name">{{ __('messages.full_name') }}</label>
                                         <input type="text" id="name" name="name" class="form-control"
@@ -806,7 +757,7 @@
                                         <label for="name" class="for-icon"><i class="far fa-user"></i></label>
                                     </div>
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="phone_number">{{ __('messages.phone_number') }}</label>
                                         <input type="number" id="phone_number" name="phone_number" class="form-control"
@@ -844,45 +795,6 @@
     </section>
     <!-- Contact Area end -->
 
-
-    <!-- Client Log start -->
-    <div class="client-logo-area rel pt-100 z-1">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-12">
-                    <div class="section-title text-center pt-5 mb-65 wow fadeInUp delay-0-2s">
-                        <h6>{!! __('messages.client_title') !!}</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="client-logo-wrap">
-                <a class="client-logo-item wow fadeInUp delay-0-2s"">
-                        <img src=" {{ asset('/assets/images/client-logos/bumikartini.webp') }}" alt="{{ __('messages.alt_client') }}">
-                </a>
-                <a class="client-logo-item wow fadeInUp delay-0-3s">
-                    <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" alt="{{ __('messages.alt_client') }}">
-                </a>
-                <a class="client-logo-item wow fadeInUp delay-0-4s">
-                    <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" alt="{{ __('messages.alt_client') }}">
-                </a>
-                <a class="client-logo-item wow fadeInUp delay-0-5s">
-                    <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" width="90%" alt="{{ __('messages.alt_client') }}">
-                </a>
-                <a class="client-logo-item wow fadeInUp delay-0-6s">
-                    <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" width="120%" alt="{{ __('messages.alt_client') }}">
-                </a>
-            </div>
-        </div>
-        <div class="bg-lines">
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-            <span></span><span></span>
-        </div>
-    </div>
-    <!-- Client Log end -->
-
     <!-- footer area -->
     @include('frontend.includes.footers.footer')
     <!-- footer area end -->
@@ -902,10 +814,661 @@
             margin-top: 40px;
         }
 
+        /* Hero Buttons Alignment & Distinct Styles (Full Solid vs Line Outline) */
+        .hero-btns {
+            display: flex !important;
+            align-items: center !important;
+            flex-wrap: wrap !important;
+            gap: 15px !important;
+            margin-top: 30px !important;
+        }
+
+        .hero-btns .theme-btn {
+            margin: 0 !important;
+            height: 48px !important;
+            padding: 0 28px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border-radius: 12px !important;
+            font-size: 15px !important;
+            font-weight: 600 !important;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        }
+
+        /* 1. Full Solid Color Button */
+        .theme-btn.theme-btn-solid,
+        a.theme-btn.theme-btn-solid {
+            background: var(--primary-color) !important;
+            border: 1.5px solid var(--primary-color) !important;
+            color: #ffffff !important;
+            box-shadow: 0 4px 14px rgba(6, 146, 140, 0.3) !important;
+        }
+
+        .theme-btn.theme-btn-solid i,
+        a.theme-btn.theme-btn-solid i {
+            color: #ffffff !important;
+            transition: transform 0.3s ease !important;
+        }
+
+        .theme-btn.theme-btn-solid:hover,
+        a.theme-btn.theme-btn-solid:hover {
+            background: #057d78 !important;
+            border-color: #057d78 !important;
+            color: #ffffff !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(6, 146, 140, 0.45) !important;
+        }
+
+        .theme-btn.theme-btn-solid:hover i,
+        a.theme-btn.theme-btn-solid:hover i {
+            transform: translateX(3px) !important;
+        }
+
+        /* 2. Line / Outline Button with Themed Icon */
+        .theme-btn.theme-btn-line,
+        a.theme-btn.theme-btn-line {
+            background: transparent !important;
+            border: 1.5px solid var(--primary-color) !important;
+            color: #ffffff !important;
+            box-shadow: none !important;
+        }
+
+        .theme-btn.theme-btn-line i,
+        a.theme-btn.theme-btn-line i {
+            color: var(--primary-color) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .theme-btn.theme-btn-line:hover,
+        a.theme-btn.theme-btn-line:hover {
+            background: var(--primary-color) !important;
+            border-color: var(--primary-color) !important;
+            color: #ffffff !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(6, 146, 140, 0.35) !important;
+        }
+
+        .theme-btn.theme-btn-line:hover i,
+        a.theme-btn.theme-btn-line:hover i {
+            color: #ffffff !important;
+            transform: translateY(2px) !important;
+        }
+
+        /* Color Override & Icon Theme Harmony */
+        .text-primary,
+        .timeline-column-header h4 i {
+            color: var(--primary-color) !important;
+        }
+
+        /* Contact Section Form Balance */
+        .contact-form-wrap {
+            max-width: 620px;
+            margin-left: auto;
+            border-radius: 20px;
+            padding: 35px 35px 25px;
+            background: #141414;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        /* About Info Box (Kiri-Kanan & White Icons) */
+        .about-info-box {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 20px !important;
+            max-width: 600px !important;
+            border-radius: 20px !important;
+            padding: 18px 28px !important;
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+
+        .about-info-box .info-box-item {
+            display: flex !important;
+            align-items: center !important;
+            margin: 0 !important;
+            flex: 1 1 220px !important;
+        }
+
+        .about-info-box .info-box-item > i {
+            margin-right: 15px !important;
+            color: #ffffff !important;
+            background: var(--primary-color) !important;
+            width: 44px !important;
+            height: 44px !important;
+            line-height: 44px !important;
+            font-size: 16px !important;
+            border-radius: 50% !important;
+            text-align: center !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-shrink: 0 !important;
+            box-shadow: none !important;
+        }
+
+        .about-info-box .info-box-item .content span {
+            font-size: 13px !important;
+            color: rgba(255, 255, 255, 0.6) !important;
+            font-weight: 500 !important;
+        }
+
+        .about-info-box .info-box-item .content a {
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            color: #ffffff !important;
+            transition: 0.3s !important;
+        }
+
+        .about-info-box .info-box-item .content a:hover {
+            color: var(--primary-color) !important;
+        }
+
+        /* Clean Modern Footer Styling */
+        .footer-two {
+            background-color: #0c0c0c !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-logo img {
+            transition: transform 0.3s ease;
+        }
+
+        .footer-logo img:hover {
+            transform: scale(1.05);
+        }
+
+        .footer-contact-brand h5 {
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .footer-contact-link {
+            color: rgba(255, 255, 255, 0.65) !important;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .footer-two .widget_nav_menu {
+            margin: 0 !important;
+            max-width: 100% !important;
+        }
+
+        .footer-two .widget_nav_menu ul {
+            display: inline-flex !important;
+            flex-wrap: wrap !important;
+            gap: 6px 18px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .footer-two .widget_nav_menu ul li {
+            margin: 0 !important;
+        }
+
+        .footer-two .widget_nav_menu ul li a {
+            color: rgba(255, 255, 255, 0.7) !important;
+            font-size: 13.5px !important;
+            font-weight: 500 !important;
+            padding: 4px 6px !important;
+            border-radius: 6px;
+            transition: all 0.3s ease !important;
+        }
+
+        .footer-two .widget_nav_menu ul li a:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .footer-divider {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.07);
+            margin: 30px 0 !important;
+        }
+
+        .social-style-one a {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 36px !important;
+            height: 36px !important;
+            border-radius: 50% !important;
+            background: rgba(255, 255, 255, 0.04) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: rgba(255, 255, 255, 0.75) !important;
+            font-size: 14px !important;
+            box-shadow: none !important;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        }
+
+        .social-style-one a:hover {
+            background: var(--primary-color) !important;
+            border-color: var(--primary-color) !important;
+            color: #ffffff !important;
+            transform: translateY(-2px) !important;
+            box-shadow: none !important;
+        }
+
+        /* Modern Clean Services Cards */
+        .service-card-modern {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 32px 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .service-card-modern:hover {
+            border-color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 16px rgba(6, 146, 140, 0.2);
+        }
+
+        .service-icon-box {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(6, 146, 140, 0.12);
+            border: 1px solid rgba(6, 146, 140, 0.3);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            box-shadow: none !important;
+            transition: all 0.3s ease;
+        }
+
+        .service-card-modern:hover .service-icon-box {
+            background: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+            transform: scale(1.08);
+            box-shadow: none !important;
+        }
+
+        .service-number-badge {
+            font-size: 15px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 1px;
+            font-family: 'Inter', sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        .service-card-modern:hover .service-number-badge {
+            color: var(--primary-color);
+        }
+
+        .service-card-body h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        .service-card-body p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 14px;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        .service-card-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .service-link-btn {
+            display: inline-flex;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .service-link-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .service-card-modern:hover .service-link-btn {
+            color: var(--primary-color);
+        }
+
+        .service-card-modern:hover .service-link-btn i {
+            transform: translateX(4px);
+        }
+
+        /* About Experience Glass Badge */
+        .experience-glass-badge {
+            position: absolute;
+            bottom: 30px;
+            left: -20px;
+            background: rgba(20, 20, 20, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 16px 22px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            z-index: 3;
+            transition: 0.3s;
+        }
+
+        .experience-glass-badge:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-4px);
+        }
+
+        .experience-glass-badge .exp-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            background: var(--primary-color);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .experience-glass-badge .exp-text h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        .experience-glass-badge .exp-text p {
+            margin: 0;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Minimalist Modern Timeline (No Bulky Cards) */
+        .timeline-header-minimal h4 {
+            color: #ffffff;
+            font-size: 21px;
+            font-weight: 700;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-minimal-list {
+            position: relative;
+            padding-left: 26px;
+            border-left: 2px solid rgba(255, 255, 255, 0.08);
+            margin-left: 8px;
+        }
+
+        .timeline-minimal-item {
+            position: relative;
+            padding-bottom: 34px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-minimal-item:last-child {
+            padding-bottom: 5px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -33px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            border: 2px solid #000000;
+            box-shadow: 0 0 0 3px rgba(6, 146, 140, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-minimal-item:hover .timeline-dot {
+            transform: scale(1.3);
+            background: #ffffff;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(6, 146, 140, 0.5);
+        }
+
+        .timeline-meta {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .timeline-period {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary-color);
+            background: rgba(6, 146, 140, 0.12);
+            border: 1px solid rgba(6, 146, 140, 0.25);
+            padding: 4px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+            line-height: 1;
+            height: 22px;
+            box-sizing: border-box;
+        }
+
+        .timeline-org {
+            font-size: 13.5px;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+            line-height: 1;
+        }
+
+        .timeline-role {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.35;
+            transition: color 0.2s ease;
+        }
+
+        .timeline-minimal-item:hover .timeline-role {
+            color: var(--primary-color);
+        }
+
+        .timeline-desc {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 14px;
+            line-height: 1.65;
+            margin-bottom: 0;
+        }
+
+        /* Modern Project Card & Swiper Anti-Clipping */
         .project-swiper {
             width: 100%;
-            height: 100%;
-            padding-bottom: 50px;
+            height: auto;
+            padding-top: 15px !important;
+            padding-bottom: 50px !important;
+            padding-left: 6px !important;
+            padding-right: 6px !important;
+            margin-top: -15px !important;
+            position: relative;
+            z-index: 2;
+        }
+
+        .project-swiper .swiper-slide {
+            height: auto;
+            display: flex;
+            box-sizing: border-box;
+            padding: 4px;
+        }
+
+        .project-card-modern {
+            width: 100% !important;
+            background: #141414 !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            border-radius: 16px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            position: relative !important;
+            z-index: 1 !important;
+            box-sizing: border-box !important;
+            transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+        }
+
+        .project-card-modern:hover {
+            z-index: 10 !important;
+            border-color: var(--primary-color) !important;
+            transform: translateY(-6px) !important;
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.7), 0 0 16px rgba(6, 146, 140, 0.3) !important;
+        }
+
+        .project-card-modern .image {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+            border-radius: 15px 15px 0 0 !important;
+            position: relative !important;
+            background: #0d0d0d;
+        }
+
+        .project-card-modern .image img {
+            width: 100% !important;
+            height: auto !important;
+            display: block !important;
+            border-radius: 15px 15px 0 0 !important;
+            transition: transform 0.4s ease !important;
+        }
+
+        .project-card-modern:hover .image img {
+            transform: scale(1.04) !important;
+        }
+
+        .project-card-content {
+            padding: 20px 18px !important;
+            flex-grow: 1 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+        }
+
+        .project-category-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            z-index: 2;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .project-tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tech-tag {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 6px;
+            background: rgba(6, 146, 140, 0.08);
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(6, 146, 140, 0.2);
+        }
+
+        .project-card-content h5 a {
+            color: #fff;
+            transition: 0.2s;
+        }
+
+        .project-card-content h5 a:hover {
+            color: var(--primary-color);
+        }
+
+        .project-action-btns {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .btn-preview-modal,
+        .btn-discuss-project {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12.5px;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 8px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            text-align: center;
+            flex: 1 1 0;
+        }
+
+        .btn-preview-modal {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+        }
+
+        .btn-preview-modal:hover {
+            background: rgba(6, 146, 140, 0.15);
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-discuss-project {
+            background: rgba(6, 146, 140, 0.15);
+            border: 1px solid rgba(6, 146, 140, 0.4);
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn-discuss-project:hover {
+            background: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
         }
 
         .swiper-pagination-bullet {
@@ -917,6 +1480,49 @@
             opacity: 1;
             width: 20px;
             border-radius: 5px;
+        }
+
+        /* FAQ Single Image Styles */
+        .faq-single-image-wrap {
+            position: relative;
+            width: 100%;
+        }
+
+        .faq-single-image-card {
+            width: 100%;
+            height: 480px;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            background: #151515;
+        }
+
+        .faq-single-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+            border-radius: 16px;
+            transition: transform 0.6s ease;
+        }
+
+        .faq-single-image-card:hover img {
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 991px) {
+            .faq-single-image-card {
+                height: 380px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .faq-single-image-card {
+                height: 280px;
+            }
         }
 
         /* Full Screen Modal Style */
@@ -972,10 +1578,121 @@
             color: var(--primary-color);
         }
 
-        @media only screen and (max-width: 700px) {
+        /* Comprehensive Mobile Responsiveness Enhancements */
+        @media only screen and (max-width: 767px) {
+            .experience-glass-badge {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                margin-top: 20px;
+                width: 100%;
+                justify-content: center;
+                padding: 14px 18px;
+            }
+
+            .about-info-box {
+                padding: 16px 18px !important;
+                gap: 14px !important;
+            }
+
+            .about-info-box .info-box-item {
+                flex: 1 1 100% !important;
+                min-width: 100% !important;
+            }
+
+            .about-info-box .info-box-item .content a {
+                word-break: break-all;
+                font-size: 13.5px !important;
+            }
+
+            .timeline-minimal-list {
+                padding-left: 22px !important;
+                margin-left: 4px !important;
+            }
+
+            .timeline-dot {
+                left: -29px !important;
+            }
+
+            .timeline-role {
+                font-size: 16.5px !important;
+            }
+
+            .service-card-modern {
+                padding: 24px 20px !important;
+            }
+
+            .service-card-body h4 {
+                font-size: 18px !important;
+            }
+
+            .service-card-body p {
+                font-size: 13.5px !important;
+            }
+
+            .contact-form-wrap {
+                padding: 24px 18px 15px !important;
+                border-radius: 16px !important;
+            }
+
+            .project-img-wrap img {
+                height: 200px !important;
+                object-fit: cover !important;
+            }
+
             .full-screen-content {
                 width: 95%;
                 margin-top: 25%;
+            }
+        }
+
+        @media only screen and (max-width: 575px) {
+            .hero-btns {
+                gap: 10px !important;
+            }
+
+            .hero-btns .theme-btn {
+                width: 100%;
+                text-align: center;
+                margin-right: 0 !important;
+            }
+
+            .section-title h2 {
+                font-size: 26px !important;
+                line-height: 1.25 !important;
+            }
+
+            .section-title h3 {
+                font-size: 20px !important;
+            }
+
+            .footer-two .widget_nav_menu ul {
+                justify-content: center !important;
+                gap: 6px 14px !important;
+            }
+
+            .footer-two .widget_nav_menu ul li a {
+                font-size: 13px !important;
+            }
+
+            .social-style-one a {
+                width: 34px !important;
+                height: 34px !important;
+                font-size: 13px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .project-action-btns {
+                flex-direction: column !important;
+                gap: 8px !important;
+            }
+
+            .btn-preview-modal,
+            .btn-discuss-project {
+                width: 100% !important;
+                padding: 9px 12px !important;
+                font-size: 13px !important;
             }
         }
     </style>
@@ -983,7 +1700,7 @@
     <!-- Swiper and Modal JS -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Initialize Swiper
+            // Initialize Project Swiper
             const swiper = new Swiper('.project-swiper', {
                 slidesPerView: 1,
                 spaceBetween: 30,
@@ -993,7 +1710,7 @@
                     disableOnInteraction: false,
                 },
                 pagination: {
-                    el: '.swiper-pagination',
+                    el: '.project-swiper-pagination',
                     clickable: true,
                 },
                 breakpoints: {

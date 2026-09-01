@@ -27,11 +27,13 @@
                 background: #070707
                 border-color: $primary-color
                 &::placeholder
-                    color: white
+                    color: transparent !important
+                    opacity: 0 !important
                 ~ .for-icon
-                    color: white
+                    color: $primary-color
             &::placeholder
-                color: rgba(255, 255, 255, 0.20)
+                color: rgba(255, 255, 255, 0.35)
+                transition: opacity 0.2s ease, color 0.2s ease
         label
             font-size: 18px
             color: white

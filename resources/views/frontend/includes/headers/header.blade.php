@@ -2,7 +2,7 @@
 <header class="main-header menu-absolute">
     <!--Header-Upper-->
     <div class="header-upper">
-        <div class="container container-1620 clearfix">
+        <div class="container clearfix">
 
             <div class="header-inner rel d-flex align-items-center">
                 <div class="logo-outer">

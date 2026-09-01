@@ -3,26 +3,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rona Faroni — Fullstack Developer & Digital Product Engineer</title>
-<meta name="description"
-    content="I’m Rona Faroni — a passionate Fullstack Developer who turns complex problems into simple, functional, and elegant digital products. I specialize in building scalable web & mobile applications with clean code and great user experience.">
-
-<meta name="keywords"
-    content="Rona Faroni, Fullstack Developer, Web Developer, App Developer, Software Engineer, Laravel, NextJS, React, Mobile App, UI/UX, Programmer Indonesia">
+<meta name="description" content="{{ strip_tags(__('messages.about_desc')) }}">
+<meta name="keywords" content="Rona Faroni, Fullstack Developer, Web Developer, App Developer, Software Engineer, Laravel, NextJS, React, Mobile App, UI/UX, Programmer Indonesia">
 <meta name="author" content="Rona Faroni">
 
 <!-- ✅ CANONICAL (hindari duplikat SEO URL) -->
-<link rel="canonical" href="https://ronafaronie.my.id">
+<link rel="canonical" href="https://ronafaroni.my.id">
 
 <!-- ✅ OPEN GRAPH / SOCIAL SHARE -->
-<meta property="og:title" content="Rona Faroni — Fullstack Developer & Digital Product Engineer">
-<meta property="og:description"
-    content="Building scalable and user-focused digital products with clean code, modern UI, and strong technical architecture.">
+<meta property="og:title" content="@hasSection('title')@yield('title')@else{{ __('messages.page_title') }}@endif">
+<meta property="og:description" content="{{ strip_tags(__('messages.about_desc')) }}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ronafaronie.my.id">
-<meta property="og:image" content="https://ronafaronie.my.id/assets/images/about/aboutme-icon1.webp">
+<meta property="og:url" content="https://ronafaroni.my.id">
+<meta property="og:image" content="https://ronafaroni.my.id/assets/images/about/aboutme-thumbnail.png">
+<meta property="fb:app_id" content="1075706353842878">
 <meta property="og:site_name" content="Rona Faroni">
-<meta property="og:locale" content="ID">
+<meta property="og:locale" content="{{ app()->getLocale() == 'id' ? 'id_ID' : 'en_US' }}">
 <meta property="profile:username" content="ronafachronie"> <!-- Instagram & Threads -->
 <meta property="profile:first_name" content="Rona">
 <meta property="profile:last_name" content="Faroni">
@@ -32,13 +28,13 @@
 
 <!-- ✅ TWITTER CARD -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Rona Faroni — Fullstack Developer">
-<meta name="twitter:description" content="Transforming ideas into modern, scalable, and impactful digital products.">
-<meta name="twitter:image" content="https://ronafaronie.my.id/assets/images/about/aboutme-icon1.webp">
+<meta name="twitter:title" content="@hasSection('title')@yield('title')@else{{ __('messages.page_title') }}@endif">
+<meta name="twitter:description" content="{{ strip_tags(__('messages.about_desc')) }}">
+<meta name="twitter:image" content="https://ronafaroni.my.id/assets/images/about/aboutme-thumbnail.png">
 <meta name="twitter:creator" content="@ronafaroni">
 
 <!-- Title -->
-<title>@yield('title')</title>
+<title>@hasSection('title')@yield('title')@else{{ __('messages.page_title') }}@endif</title>
 <!-- Favicon Icon -->
 <link rel="shortcut icon" href="{{ asset('/assets/images/logos/favicon.webp') }}" type="image/x-icon">
 
@@ -65,6 +61,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
 <style>
+    /* GLOBAL MOBILE FIXES */
+    @media (max-width: 767px) {
+        body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+        }
+
+        .container,
+        .container-fluid {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+
+        section {
+            overflow-x: hidden !important;
+        }
+    }
+
     .tools-slideshow {
         width: 100%;
         overflow: hidden;
@@ -193,48 +207,6 @@
         display: block;
     }
 
-    .lang-switcher .dropdown-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 20px;
-        color: rgba(255, 255, 255, 0.8) !important;
-        font-size: 14px;
-        text-decoration: none !important;
-        transition: 0.2s;
-    }
-
-    .lang-switcher .dropdown-item:hover {
-        background: var(--primary-color) !important;
-        color: #000 !important;
-    }
-
-    .lang-switcher .dropdown-item.active {
-        color: var(--primary-color) !important;
-        font-weight: 700;
-    }
-
-    .lang-switcher .dropdown-item {
-        border-radius: 8px;
-        padding: 10px 15px;
-        color: rgba(255, 255, 255, 0.8) !important;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        transition: 0.2s;
-    }
-
-    .lang-switcher .dropdown-item:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: var(--primary-color) !important;
-    }
-
-    .lang-switcher .dropdown-item.active {
-        background-color: var(--primary-color);
-        color: #000 !important;
-    }
-
     /* GLOBAL LOGO FIX - PRECISION SIZING */
     .logo-outer,
     .logo,
@@ -307,6 +279,11 @@
     .main-menu .navigation>li.current>a {
         opacity: 1;
         color: var(--primary-color) !important;
+        text-decoration: none !important;
+    }
+
+    .main-menu .navigation>li>a:after {
+        display: none !important;
     }
 
 
@@ -349,7 +326,7 @@
             height: 65px !important;
             /* Reduced from 70px */
             min-height: auto !important;
-            padding: 0 15px !important;
+            padding: 0 20px !important;
             width: 100% !important;
         }
 
@@ -437,7 +414,11 @@
         }
 
         .lang-switcher {
-            margin: 0 5px !important;
+            margin: 0 10px 0 5px !important;
+        }
+
+        .navbar-toggle {
+            margin-right: 0 !important;
         }
     }
 

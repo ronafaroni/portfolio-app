@@ -15,10 +15,20 @@ class HomeController extends Controller
 
     public function download()
     {
-        $filePath = public_path('assets/download/Rona Faroni.pdf');
-        $fileName = 'Rona Faroni - Curriculum Vitae.pdf';
+        $file1 = public_path('assets/download/CV - RONA FARONI.pdf');
+        $file2 = public_path('assets/download/Rona Faroni.pdf');
 
-        return response()->download($filePath, $fileName);
+        $filePath = file_exists($file1) ? $file1 : (file_exists($file2) ? $file2 : null);
+
+        if (!$filePath) {
+            abort(404, 'File CV tidak ditemukan.');
+        }
+
+        $fileName = 'CV - Rona Faroni.pdf';
+
+        return response()->download($filePath, $fileName, [
+            'Content-Type' => 'application/pdf',
+        ]);
     }
 
 }

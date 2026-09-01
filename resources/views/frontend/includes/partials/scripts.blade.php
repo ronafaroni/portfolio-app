@@ -55,29 +55,33 @@
         let text = "";
         
         if (currentLang === 'id') {
-            text = `Halo, Sintesa Digital Solution 👋
+            text = `Halo Rona Faroni,
+
 Nama: ${name}
-No. HP: ${phone}
-Pesan: ${message}
+Kontak / No. HP: ${phone}
 
-Terima kasih telah menghubungi kami! 🙏
-Kami akan membalas pesan Anda sesegera mungkin.`;
+Detail Pesan / Kebutuhan:
+${message}
+
+Terima kasih.`;
         } else {
-            text = `Hello, Sintesa Digital Solution 👋
-Name: ${name}
-Phone: ${phone}
-Message: ${message}
+            text = `Hello Rona Faroni,
 
-Thank you for contacting us! 🙏
-We'll get back to you as soon as possible.`;
+Name: ${name}
+Contact / Phone: ${phone}
+
+Project Details / Message:
+${message}
+
+Thank you.`;
         }
 
         const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
         window.open(url, "_blank");
 
         const alertMsg = currentLang === 'id' 
-            ? "Terima kasih! Pesan Anda sedang dikirim ke WhatsApp kami." 
-            : "Thank you! Your message is being sent to our WhatsApp.";
+            ? "Terima kasih! Pesan Anda sedang dikirim ke WhatsApp." 
+            : "Thank you! Your message is being sent to WhatsApp.";
         alert(alertMsg);
     }
 
@@ -103,22 +107,35 @@ We'll get back to you as soon as possible.`;
 </script>
 
 <script>
-    // Pilih semua link di navbar
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    // Smooth scroll & auto-close mobile navbar on anchor click
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('nav a[href^="#"], .main-footer a[href^="#"]');
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault(); // cegah default lompat langsung
-            const targetId = link.getAttribute('href'); // misal: #about
-            const targetSection = document.querySelector(targetId);
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const targetId = link.getAttribute('href');
+                if (targetId && targetId !== '#' && targetId.startsWith('#')) {
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        e.preventDefault();
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
 
-            if (targetSection) {
-                // Scroll halus ke posisi section
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+                        // Auto-collapse mobile navbar if open
+                        const navbarCollapse = document.querySelector('.navbar-collapse');
+                        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                            if (typeof bootstrap !== 'undefined' && bootstrap.Collapse) {
+                                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                                bsCollapse.hide();
+                            } else {
+                                navbarCollapse.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            });
         });
     });
 </script>
@@ -147,19 +164,21 @@ We'll get back to you as soon as possible.`;
 </script>
 
 @verbatim
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Rona Faroni",
   "jobTitle": "Fullstack Developer",
-  "url": "https://ronafaronie.my.id",
-  "image": "https://ronafaronie.my.id/assets/images/profile.jpg",
+  "url": "https://ronafaroni.my.id",
+  "image": "https://ronafaroni.my.id/assets/images/about/aboutme-thumbnail.png",
   "description": "Fullstack Developer specializing in Web and App development, building scalable and elegant digital experiences.",
   "sameAs": [
     "https://github.com/ronafaroni",
-    "https://linkedin.com/in/ronafaroni",
-    "https://instagram.com/ronafaroni"
+    "https://www.linkedin.com/in/ronafaroni",
+    "https://www.instagram.com/ronafachronie",
+    "https://www.threads.net/@ronafachronie",
+    "https://www.facebook.com/rona.fachronie"
   ]
 }
 </script>

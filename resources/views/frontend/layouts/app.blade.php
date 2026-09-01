@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <!-- Stylesheet, Meta Tag, Title -->
     @include('frontend.includes.partials.head')
     @yield('css')
 </head>
-<main class="main">
 
-    <body class="{{ $bodyClass ?? '' }}">
-        <!-- Start Contenet Area-->
+<body class="{{ $bodyClass ?? '' }}">
+    <main class="main">
+        <!-- Start Content Area -->
         @yield('content')
-        <!-- End Contenet Area -->
+        <!-- End Content Area -->
+    </main>
 
-        <!-- Start Script Area -->
-        @include('frontend.includes.partials.scripts')
-        @yield('script')
-        <!-- End Script Area -->
-    </body>
-
-</main>
+    <!-- Start Script Area -->
+    @include('frontend.includes.partials.scripts')
+    @yield('script')
+    <!-- End Script Area -->
+</body>
 
 </html>

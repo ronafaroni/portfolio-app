@@ -31,7 +31,7 @@
     ## Sidebar Widgets
     ## Main Footer */
 /* -------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 /*******************************************************/
 /******************* ## Default Style *****************/
 /*******************************************************/
@@ -1110,7 +1110,7 @@ h6,
 .h6,
 .accordion-item .accordion-button {
     color: var(--heading-color);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -4241,7 +4241,7 @@ h6,
     font-weight: 500;
     position: relative;
     color: var(--heading-color);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     text-transform: capitalize;
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
@@ -4270,10 +4270,10 @@ h6,
 }
 .main-menu .navbar-collapse li a:hover {
     color: var(--primary-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 .main-menu .navbar-collapse li a:hover:after {
-    opacity: 1;
+    opacity: 0;
 }
 .main-menu .navbar-collapse li.current > a,
 .main-menu .navbar-collapse li.current-menu-item > a {
@@ -4935,7 +4935,7 @@ h6,
     display: block;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .hero-two-content .sub-title {
@@ -5264,7 +5264,7 @@ h6,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     background: var(--primary-color);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -5350,7 +5350,7 @@ h6,
 .about-info-item {
     margin-top: 40px;
     font-weight: 500;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     text-transform: uppercase;
 }
 .about-info-item small {
@@ -5392,7 +5392,7 @@ h6,
     stroke: #ffffff42;
     color: transparent;
     margin-bottom: 20px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffffff42;
 }
@@ -5435,7 +5435,7 @@ h6,
 .award-box {
     position: relative;
     margin: 0 -1px -1px 0;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     padding: 55px 35px 45px 45px;
     border: 1px solid var(--border-color);
 }
@@ -5541,7 +5541,7 @@ h6,
     color: white;
     font-size: 24px;
     margin-right: 50px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 @media only screen and (max-width: 479px) {
     .service-item .content {
@@ -5629,7 +5629,7 @@ h6,
     line-height: 1.5;
     margin-right: 5%;
     padding-left: 20px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     border-left: 1px solid var(--primary-color);
 }
 @media only screen and (max-width: 991px) {
@@ -5656,7 +5656,7 @@ h6,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .service-item-two .list li:before {
     font-size: 14px;
@@ -5721,7 +5721,7 @@ h6,
     line-height: 1.2;
     border-radius: 14px;
     background: #131313;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     color: rgba(255, 255, 255, 0.35);
 }
 .skill-item:hover {
@@ -5950,7 +5950,7 @@ h6,
     font-weight: 500;
     margin-bottom: 8px;
     text-transform: uppercase;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .resume-box .timeline-item .duration i {
     margin-right: 7px;
@@ -6044,7 +6044,7 @@ h6,
     display: inline-block;
     text-transform: uppercase;
     background: var(--lighter-color);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 @media only screen and (max-width: 767px) {
     .timeline-heading .title {
@@ -6115,7 +6115,7 @@ h6,
     padding: 19px 45px 19px 30px;
     border-radius: 14px;
     background: var(--lighter-color);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     border: 1px solid var(--border-color);
 }
 .form-style-one .form-group .nice-select:focus,
@@ -6166,7 +6166,7 @@ h6,
     color: white;
     font-weight: 500;
     margin-bottom: 18px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .form-style-one .form-group .nice-select .current {
     font-weight: 400;
@@ -6760,7 +6760,7 @@ h6,
 .pd-info-item span {
     display: block;
     color: var(--lighter-color);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .pd-info-item h5 {
@@ -6824,7 +6824,7 @@ h6,
     margin-right: 20px;
     color: var(--lighter-color);
     text-transform: uppercase;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     background: var(--primary-color);
 }
 
@@ -6858,7 +6858,7 @@ h6,
     font-size: 20px;
     font-weight: 700;
     margin-right: 20px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     text-transform: uppercase;
 }
 .marquee-item i {
@@ -6997,7 +6997,7 @@ h6,
     font-size: 48px;
     font-weight: 500;
     color: var(--primary-color);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 @media only screen and (max-width: 1199px) {
     .pricing-item .pricing-header .price {
@@ -7106,7 +7106,7 @@ h6,
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 30px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .pricing-item.style-two .price:before {
     content: "$";
@@ -7145,7 +7145,7 @@ h6,
     display: flex;
     font-size: 18px;
     line-height: 1.3;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -7223,7 +7223,7 @@ h6,
     position: relative;
     background: transparent;
     text-transform: uppercase;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .pricing-tab li button:focus,
 .pricing-tab li button:hover {
@@ -7284,59 +7284,154 @@ h6,
 /*******************************************************/
 /**************** ## Client Logo Area ******************/
 /*******************************************************/
-.client-logo-wrap {
+.hero-client-marquee-wrap h6 span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.client-marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 10px 0 30px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 25px, black calc(100% - 25px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, black 25px, black calc(100% - 25px), transparent 100%);
+}
+.client-marquee-track {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-right: -30px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-animation: clientMarqueeScroll 30s linear infinite;
+    animation: clientMarqueeScroll 30s linear infinite;
+    will-change: transform;
 }
-@media only screen and (max-width: 991px) {
-    .client-logo-wrap {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+.client-marquee-track:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+@-webkit-keyframes clientMarqueeScroll {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
     }
 }
-.client-logo-wrap .client-logo-item {
-    width: calc(20% - 60px);
-    margin: 0 30px 70px;
-    -webkit-filter: grayscale(1) opacity(0.2);
-    filter: grayscale(1) opacity(0.2);
-}
-@media only screen and (max-width: 991px) {
-    .client-logo-wrap .client-logo-item {
-        width: calc(25% - 60px);
-        margin-bottom: 40px;
+@keyframes clientMarqueeScroll {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+.client-marquee-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0 45px;
+    height: 60px;
+    min-width: 140px;
+    opacity: 0.65;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.client-marquee-item:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transform: translateY(-2px) scale(1.05);
+    transform: translateY(-2px) scale(1.05);
+}
+.client-marquee-item img {
+    max-height: 44px;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+    -webkit-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.client-marquee-item img.logo-wide-lg {
+    max-height: 52px;
+    max-width: 175px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.client-marquee-item img.logo-wide-md {
+    max-height: 48px;
+    max-width: 160px;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.client-marquee-item img.logo-boost {
+    max-height: 56px;
+    max-width: 190px;
+    -webkit-transform: scale(1.22);
+    transform: scale(1.22);
+}
+.client-marquee-item img.logo-sigawai {
+    max-height: 44px;
+    max-width: 155px;
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
 }
 @media only screen and (max-width: 767px) {
-    .client-logo-wrap .client-logo-item {
-        width: calc(33.33% - 60px);
+    .client-marquee-item {
+        margin: 0 25px;
+        min-width: 110px;
+        height: 50px;
     }
-}
-@media only screen and (max-width: 375px) {
-    .client-logo-wrap .client-logo-item {
-        width: calc(50% - 60px);
+    .client-marquee-item img {
+        max-height: 36px;
+        max-width: 120px;
     }
-}
-.client-logo-wrap .client-logo-item:hover {
-    -webkit-filter: grayscale(0) opacity(1);
-    filter: grayscale(0) opacity(1);
-}
-
-.style-two.client-logo-wrap .client-logo-item {
-    text-align: center;
-    -webkit-filter: grayscale(0) opacity(1);
-    filter: grayscale(0) opacity(1);
+    .client-marquee-item img.logo-wide-lg {
+        max-height: 42px;
+        max-width: 140px;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    .client-marquee-item img.logo-wide-md {
+        max-height: 38px;
+        max-width: 130px;
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    .client-marquee-item img.logo-boost {
+        max-height: 44px;
+        max-width: 150px;
+        -webkit-transform: scale(1.12);
+        transform: scale(1.12);
+    }
+    .client-marquee-item img.logo-sigawai {
+        max-height: 36px;
+        max-width: 125px;
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
 }
 
 /*******************************************************/
@@ -7691,7 +7786,7 @@ h6,
     }
 }
 .author-date-share .text span {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .author-date-share .text h5 {
     margin-bottom: 0;
@@ -7729,7 +7824,7 @@ blockquote {
     padding: 30px 40px 30px 125px;
     color: white;
     background: #131313;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     border-left: 3px solid var(--primary-color);
 }
 blockquote:before {
@@ -8232,7 +8327,7 @@ blockquote .blockquote-footer:before {
 }
 .widget-category ul li a {
     font-weight: 500;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .widget-category ul li a:not(:hover) {
     color: rgba(255, 255, 255, 0.3);
@@ -8292,7 +8387,7 @@ blockquote .blockquote-footer:before {
     padding: 2px 20px;
     margin: 10px 5px 0;
     border-radius: 10px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     text-transform: capitalize;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -8354,7 +8449,7 @@ blockquote .blockquote-footer:before {
     font-weight: 600;
     margin-bottom: 15px;
     color: var(--heading-color);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .widget-search-filter .form-group input,
 .widget-search-filter .form-group .nice-select {
@@ -8410,7 +8505,7 @@ blockquote .blockquote-footer:before {
 }
 .widget_nav_menu ul li {
     margin: 0 22px 5px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .widget_newsletter form {
@@ -8557,3 +8652,171 @@ blockquote .blockquote-footer:before {
         justify-content: center;
     }
 }
+
+/* MOBILE OVERRIDES BY ANTIGRAVITY */
+@media only screen and (max-width: 575px) {
+    .pt-150, .rpt-150, .rpy-150 { padding-top: 60px !important; }
+    .pb-100, .rpb-100, .rpy-100 { padding-bottom: 50px !important; }
+    .pt-130, .rpt-130, .rpy-130 { padding-top: 60px !important; }
+    .py-130, .rpy-130 { padding-top: 60px !important; padding-bottom: 60px !important; }
+    
+    .section-title h2 { font-size: 28px !important; line-height: 1.2 !important; }
+    .section-title h3 { font-size: 22px !important; }
+    
+    .about-content-part { margin-bottom: 30px !important; }
+    .skill-items-wrap { margin-top: 20px !important; }
+    
+    .skill-item { padding: 15px 5px !important; }
+    .skill-item h5 { font-size: 14px !important; margin-bottom: 10px !important; }
+    
+    .hero-content h1 { font-size: 36px !important; }
+    .hero-content h3 { font-size: 20px !important; }
+    
+/* Fix floating icons overlap */
+    .what-i-do-images .icon { display: none !important; }
+}
+
+/* Contact Form Input Improvements - Instant Placeholder Hide on Focus */
+.form-control::placeholder,
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.35) !important;
+    -webkit-transition: opacity 0.2s ease, color 0.2s ease;
+    -o-transition: opacity 0.2s ease, color 0.2s ease;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.form-control:focus::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+.form-control:focus:-moz-placeholder,
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+.form-control:focus::-moz-placeholder,
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+.form-control:focus:-ms-input-placeholder,
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+.form-control:focus::placeholder,
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+/* FAQ Image Styling - Enhanced Top and Bottom Spacing & Card Framing */
+.faq-single-image-wrap {
+    position: relative;
+    padding: 35px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.faq-single-image-card {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+}
+.faq-single-image-card img {
+    max-height: 520px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+    -webkit-filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.45));
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.45));
+    -webkit-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
+}
+.faq-single-image-card:hover img {
+    -webkit-transform: translateY(-6px) scale(1.02);
+    transform: translateY(-6px) scale(1.02);
+}
+@media only screen and (max-width: 991px) {
+    .faq-single-image-wrap {
+        padding: 15px 0 35px;
+    }
+    .faq-single-image-card img {
+        max-height: 400px;
+    }
+}
+
+/* Footer Social Icon SVG Styling */
+.social-style-one a {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+}
+
+.social-style-one a svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+    display: block;
+    -webkit-transition: fill 0.3s ease;
+    -o-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
+}
+
+/* ===================================================
+   Brand & Client Logo Interactive Hover Effects
+   =================================================== */
+.logo a img,
+.mobile-logo a img,
+.footer-logo a img {
+    -webkit-transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    -o-transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.logo a:hover img,
+.mobile-logo a:hover img,
+.footer-logo a:hover img {
+    -webkit-transform: translateY(-2px) scale(1.08);
+    -ms-transform: translateY(-2px) scale(1.08);
+    transform: translateY(-2px) scale(1.08);
+    -webkit-filter: drop-shadow(0 4px 15px rgba(15, 205, 129, 0.45));
+    filter: drop-shadow(0 4px 15px rgba(15, 205, 129, 0.45));
+}
+
+.client-marquee-item {
+    cursor: pointer;
+}
+
+
+
+
