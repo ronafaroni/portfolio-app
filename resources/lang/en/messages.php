@@ -144,7 +144,7 @@ return [
     'edu_1_years' => '2018',
     'edu_1_degree' => 'Bachelor of Informatics / Computer Science',
     'edu_1_institution' => 'Unisnu Jepara',
-    'edu_1_desc' => 'Graduated in Computer Science with a 3.76 GPA. Specialized in Software Engineering, Data Structures & Algorithms, Relational Databases, and Modern Web Architecture.',
+    'edu_1_desc' => 'Graduated in Informatics Engineering with a 3.76 GPA. Specialized in Software Engineering, Data Structures & Algorithms, Relational Databases, and Modern Web Architecture.',
 
     'edu_2_years' => '2022',
     'edu_2_degree' => 'Laravel 8x Fundamental',

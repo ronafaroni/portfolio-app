@@ -144,7 +144,7 @@ return [
     'edu_1_years' => '2018',
     'edu_1_degree' => 'S1 Teknik Informatika',
     'edu_1_institution' => 'Unisnu Jepara',
-    'edu_1_desc' => 'Lulusan Sarjana Komputer dengan IPK 3.76. Berfokus pada Rekayasa Perangkat Lunak, Struktur Data & Algoritma, Manajemen Basis Data Relasional, serta Pemrograman Web Modern.',
+    'edu_1_desc' => 'Lulusan Teknik Informatika dengan IPK 3.76. Berfokus pada Rekayasa Perangkat Lunak, Struktur Data & Algoritma, Manajemen Basis Data Relasional, serta Pemrograman Web Modern.',
 
     'edu_2_years' => '2022',
     'edu_2_degree' => 'Laravel 8x Fundamental',
