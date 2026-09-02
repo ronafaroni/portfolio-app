@@ -170,10 +170,6 @@
                                 <div class="exp-text">
                                     <span class="h4 d-block m-0 text-white fw-bold">{{ __('messages.badge_exp_years') }}</span>
                                     <p>{{ __('messages.badge_exp_title') }}</p>
-                                </div>
-                            </div>
-                            <div class="dot-shape">
-                                <img src="{{ asset('/assets/images/shape/shape.webp') }}" width="30px" alt="{{ __('messages.alt_shape') }}">
                             </div>
                         </div>
                     </div>
