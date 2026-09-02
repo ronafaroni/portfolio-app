@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="{{ strip_tags(__('messages.about_desc')) }}">
+<meta name="description" content="{{ strip_tags(__('messages.meta_desc')) }}">
 <meta name="keywords" content="Rona Faroni, Fullstack Developer, Web Developer, App Developer, Software Engineer, Laravel, NextJS, React, Mobile App, UI/UX, Programmer Indonesia">
 <meta name="author" content="Rona Faroni">
 
@@ -12,7 +12,7 @@
 
 <!-- ✅ OPEN GRAPH / SOCIAL SHARE -->
 <meta property="og:title" content="@hasSection('title')@yield('title')@else{{ __('messages.page_title') }}@endif">
-<meta property="og:description" content="{{ strip_tags(__('messages.about_desc')) }}">
+<meta property="og:description" content="{{ strip_tags(__('messages.meta_desc')) }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ronafaroni.my.id">
 <meta property="og:image" content="https://ronafaroni.my.id/assets/images/about/aboutme-thumbnail.png">
@@ -29,7 +29,7 @@
 <!-- ✅ TWITTER CARD -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="@hasSection('title')@yield('title')@else{{ __('messages.page_title') }}@endif">
-<meta name="twitter:description" content="{{ strip_tags(__('messages.about_desc')) }}">
+<meta name="twitter:description" content="{{ strip_tags(__('messages.meta_desc')) }}">
 <meta name="twitter:image" content="https://ronafaroni.my.id/assets/images/about/aboutme-thumbnail.png">
 <meta name="twitter:creator" content="@ronafaroni">
 

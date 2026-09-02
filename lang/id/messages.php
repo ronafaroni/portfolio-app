@@ -110,7 +110,8 @@ return [
     'rights_reserved' => 'Hak Cipta Dilindungi',
 
     // Miscellaneous & Accessibility
-    'page_title' => 'Rona Faroni | Pengembang Web Fullstack',
+    'page_title' => 'Rona Faroni | Pengembang Web Fullstack & Solusi Digital Modern',
+    'meta_desc' => 'Rona Faroni - Pengembang Web Fullstack profesional berpengalaman 3+ tahun dalam pembuatan website kustom, aplikasi web Laravel & Tailwind CSS, integrasi RESTful API, dan sistem informasi manajemen bisnis.',
     'wa_message' => 'Halo Rona Faroni, saya tertarik untuk berdiskusi mengenai proyek / peluang kerja sama. Apakah ada waktu luang untuk berdiskusi? Terima kasih.',
     'alt_author' => 'Foto Profil Rona Faroni',
     'alt_logo' => 'Logo Rona Faroni',

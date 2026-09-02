@@ -110,7 +110,8 @@ return [
     'rights_reserved' => 'All Rights Reserved',
 
     // Miscellaneous & Accessibility
-    'page_title' => 'Rona Faroni | Fullstack Web Developer',
+    'page_title' => 'Rona Faroni | Fullstack Web Developer & Digital Solution Specialist',
+    'meta_desc' => 'Rona Faroni - Professional Fullstack Web Developer with 3+ years experience specializing in custom web applications, Laravel & Tailwind CSS development, RESTful API integration, and enterprise management systems.',
     'wa_message' => 'Hello Rona, I would like to discuss a project collaboration. Do you have some time to chat? Thank you.',
     'alt_author' => 'Rona Faroni Profile Photo',
     'alt_logo' => 'Rona Faroni Logo',
