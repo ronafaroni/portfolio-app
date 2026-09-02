@@ -123,20 +123,22 @@
             display: flex !important;
             flex-direction: column !important;
             justify-content: space-between !important;
-            padding-top: 95px !important;
-            padding-bottom: 20px !important;
+            padding-top: 90px !important;
+            padding-bottom: 25px !important;
             box-sizing: border-box !important;
         }
 
         #home.main-hero-area .container-1620 {
             margin-top: auto !important;
-            margin-bottom: auto !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 10px !important;
         }
 
         #home.main-hero-area .client-marquee-wrapper {
-            margin-top: auto !important;
-            padding-top: 15px !important;
+            margin-top: 0 !important;
+            padding-top: 5px !important;
             padding-bottom: 15px !important;
+            transform: translateY(-18px) !important;
         }
     }
 

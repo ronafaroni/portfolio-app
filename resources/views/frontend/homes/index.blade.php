@@ -43,7 +43,7 @@
         </div>
 
         <!-- Client Marquee inside Hero (Aligned with Header Container) -->
-        <div class="client-marquee-wrapper pt-25 pb-20 mt-10 wow fadeInUp delay-0-2s">
+        <div class="client-marquee-wrapper pt-10 pb-15 mt-0 wow fadeInUp delay-0-2s">
             <div class="container">
                 <div class="marquee-title-box mb-10 text-center">
                     <span class="marquee-sub-title d-inline-block text-center text-white" style="color: #ffffff !important;">{{ __('messages.trusted_by') }}</span>
