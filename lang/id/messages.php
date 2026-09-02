@@ -20,7 +20,7 @@ return [
 
     // About Section
     'about_subtitle' => 'Tentang Saya',
-    'about_title' => '<span>Pengembang Web Fullstack</span> & Solusi Digital Modern',
+    'about_title' => '<span>Pengembang Web Fullstack</span>',
     'about_desc' => 'Saya berfokus pada pengembangan produk web dan sistem bisnis kustom yang tangguh, aman, dan berorientasi pada kemudahan pengguna. Menggabungkan arsitektur kode yang bersih (clean architecture) dengan presisi teknis untuk menghasilkan solusi perangkat lunak yang berdaya guna.',
     'service_list_1' => 'Pengembangan Web Kustom & Fullstack',
     'service_list_2' => 'Integrasi RESTful API & Payment Gateway',
@@ -110,7 +110,7 @@ return [
     'rights_reserved' => 'Hak Cipta Dilindungi',
 
     // Miscellaneous & Accessibility
-    'page_title' => 'Rona Faroni | Pengembang Web Fullstack & Solusi Digital Modern',
+    'page_title' => 'Rona Faroni | Pengembang Web Fullstack',
     'meta_desc' => 'Rona Faroni - Pengembang Web Fullstack berpengalaman yang siap membantu mempercepat digitalisasi bisnis Anda. Menyediakan solusi website dan aplikasi kustom yang modern, cepat, aman, responsif, serta dirancang khusus untuk meningkatkan efisiensi operasional dan pertumbuhan usaha Anda.',
     'wa_message' => 'Halo Rona Faroni, saya tertarik untuk berdiskusi mengenai proyek / peluang kerja sama. Apakah ada waktu luang untuk berdiskusi? Terima kasih.',
     'alt_author' => 'Foto Profil Rona Faroni',

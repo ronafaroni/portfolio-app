@@ -20,7 +20,7 @@ return [
 
     // About Section
     'about_subtitle' => 'About Me',
-    'about_title' => '<span>Fullstack Web Developer</span> & Modern Digital Solutions',
+    'about_title' => '<span>Fullstack Web Developer</span>',
     'about_desc' => 'I help startups, enterprises, and established businesses transform ideas into secure, scalable, and intuitive web applications. Combining clean architecture with engineering rigor to deliver software that creates measurable impact.',
     'service_list_1' => 'Fullstack Web & App Engineering',
     'service_list_2' => 'RESTful API & Payment Integrations',
@@ -110,7 +110,7 @@ return [
     'rights_reserved' => 'All Rights Reserved',
 
     // Miscellaneous & Accessibility
-    'page_title' => 'Rona Faroni | Fullstack Web Developer & Digital Solution Specialist',
+    'page_title' => 'Rona Faroni | Fullstack Web Developer',
     'meta_desc' => 'Rona Faroni - Experienced Fullstack Web Developer helping businesses digitize & scale. Delivering fast, secure, modern, and high-performance custom websites & applications tailored to accelerate your business growth.',
     'wa_message' => 'Hello Rona, I would like to discuss a project collaboration. Do you have some time to chat? Thank you.',
     'alt_author' => 'Rona Faroni Profile Photo',
