@@ -116,6 +116,28 @@
             font-weight: 500 !important;
             letter-spacing: 0.3px;
         }
+
+        /* 🖥️ DESKTOP FULL-HEIGHT HERO FOLD (No other section spillover) */
+        #home.main-hero-area {
+            min-height: 100vh !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            padding-top: 95px !important;
+            padding-bottom: 20px !important;
+            box-sizing: border-box !important;
+        }
+
+        #home.main-hero-area .container-1620 {
+            margin-top: auto !important;
+            margin-bottom: auto !important;
+        }
+
+        #home.main-hero-area .client-marquee-wrapper {
+            margin-top: auto !important;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
     }
 
     /* ⚡ ACCELERATED FADE-IN SCROLL ANIMATIONS (Snappy, fast, & early triggering) */
