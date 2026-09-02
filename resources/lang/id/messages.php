@@ -111,7 +111,7 @@ return [
 
     // Miscellaneous & Accessibility
     'page_title' => 'Rona Faroni | Pengembang Web Fullstack',
-    'meta_desc' => 'Rona Faroni - Pengembang Web Fullstack berpengalaman yang siap membantu mempercepat digitalisasi bisnis Anda. Menyediakan solusi website dan aplikasi kustom yang modern, cepat, aman, responsif, serta dirancang khusus untuk meningkatkan efisiensi operasional dan pertumbuhan usaha Anda.',
+    'meta_desc' => 'Rona Faroni - Pengembang Web Fullstack profesional. Menyediakan pembuatan website kustom dan aplikasi web modern, cepat, dan aman untuk mendukung pertumbuhan bisnis Anda.',
     'wa_message' => 'Halo Rona Faroni, saya tertarik untuk berdiskusi mengenai proyek / peluang kerja sama. Apakah ada waktu luang untuk berdiskusi? Terima kasih.',
     'alt_author' => 'Foto Profil Rona Faroni',
     'alt_logo' => 'Logo Rona Faroni',

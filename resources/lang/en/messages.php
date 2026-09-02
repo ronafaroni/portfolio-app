@@ -111,7 +111,7 @@ return [
 
     // Miscellaneous & Accessibility
     'page_title' => 'Rona Faroni | Fullstack Web Developer',
-    'meta_desc' => 'Rona Faroni - Experienced Fullstack Web Developer helping businesses digitize & scale. Delivering fast, secure, modern, and high-performance custom websites & applications tailored to accelerate your business growth.',
+    'meta_desc' => 'Rona Faroni - Professional Fullstack Web Developer. Delivering custom websites and modern web applications to accelerate your business growth.',
     'wa_message' => 'Hello Rona, I would like to discuss a project collaboration. Do you have some time to chat? Thank you.',
     'alt_author' => 'Rona Faroni Profile Photo',
     'alt_logo' => 'Rona Faroni Logo',
