@@ -8,6 +8,7 @@ return [
     'services' => 'Layanan',
     'skills' => 'Keahlian',
     'portfolio' => 'Portofolio',
+    'faq' => 'FAQ',
     'contact' => 'Kontak',
 
     // Hero Section
@@ -100,6 +101,7 @@ return [
     'send_message' => 'Kirim Pesan via WhatsApp',
 
     // Client Section
+    'trusted_by' => 'Produk & Aplikasi Yang Telah Dibuat',
     'client_title' => 'Dipercaya oleh <span>Berbagai Bisnis & Brand</span>',
 
     // Footer

@@ -116,16 +116,19 @@
         }
 
         // ## OnePage Nav Scroll
-        $(".onepage a").on("click", function (e) {
-            e.preventDefault();
+        $('.onepage a, .navigation a[href^="#"]').on("click", function (e) {
             var hash = this.hash;
-            var position = $(hash).offset().top;
-            $("html").animate(
-                {
-                    scrollTop: position,
-                },
-                1000
-            );
+            if (hash && $(hash).length) {
+                e.preventDefault();
+                var headerHeight = $(".main-header").outerHeight() || 70;
+                var position = $(hash).offset().top - headerHeight;
+                $("html, body").stop().animate(
+                    {
+                        scrollTop: position,
+                    },
+                    500
+                );
+            }
         });
 
         // ## Testimonials Active
@@ -232,8 +235,8 @@
             var wow = new WOW({
                 boxClass: "wow", // animated element css class (default is wow)
                 animateClass: "animated", // animation css class (default is animated)
-                offset: 0, // distance to the element when triggering the animation (default is 0)
-                mobile: false, // trigger animations on mobile devices (default is true)
+                offset: -50, // distance to the element when triggering the animation (earlier trigger)
+                mobile: true, // trigger animations on mobile devices
                 live: true, // act on asynchronously loaded content (default is true)
             });
             wow.init();

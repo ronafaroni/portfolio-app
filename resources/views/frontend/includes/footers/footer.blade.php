@@ -18,13 +18,14 @@
             <div class="col-lg-6 col-md-12">
                 <div class="footer-widget widget_nav_menu me-0 text-center text-lg-end">
                     <ul class="d-inline-flex flex-wrap justify-content-center justify-content-lg-end mb-0">
-                        <li><a href="#home">{{ __('messages.home') }}</a></li>
-                        <li><a href="#about">{{ __('messages.about') }}</a></li>
-                        <li><a href="#resume">{{ __('messages.resume') }}</a></li>
-                        <li><a href="#services">{{ __('messages.services') }}</a></li>
-                        <li><a href="#skills">{{ __('messages.skills') }}</a></li>
-                        <li><a href="#portfolio">{{ __('messages.portfolio') }}</a></li>
-                        <li><a href="#contact">{{ __('messages.contact') }}</a></li>
+                        <li><a href="#home" class="footer-link">{{ __('messages.home') }}</a></li>
+                        <li><a href="#about" class="footer-link">{{ __('messages.about') }}</a></li>
+                        <li><a href="#resume" class="footer-link">{{ __('messages.resume') }}</a></li>
+                        <li><a href="#services" class="footer-link">{{ __('messages.services') }}</a></li>
+                        <li><a href="#skills" class="footer-link">{{ __('messages.skills') }}</a></li>
+                        <li><a href="#portfolio" class="footer-link">{{ __('messages.portfolio') }}</a></li>
+                        <li><a href="#faqs" class="footer-link">{{ __('messages.faq') }}</a></li>
+                        <li><a href="#contact" class="footer-link">{{ __('messages.contact') }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,8 +37,8 @@
         <!-- Bottom Footer Row: Copyright on Left, Social Media on Right -->
         <div class="row align-items-center justify-content-between g-3">
             <div class="col-md-6 text-center text-md-start">
-                <p class="mb-0 text-muted" style="font-size: 13px;">
-                    Copyright &copy; {{ date('Y') }} <b>Rona Faroni</b>. {{ __('messages.rights_reserved') }}.
+                <p class="mb-0 footer-copyright" style="font-size: 13.5px; color: rgba(255, 255, 255, 0.85) !important;">
+                    Copyright &copy; {{ date('Y') }} <b style="color: #ffffff !important;">Rona Faroni</b>. {{ __('messages.rights_reserved') }}.
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-end">
@@ -56,4 +57,15 @@
         </div>
     </div>
 </footer>
+
+<style>
+    .widget_nav_menu ul li a.footer-link {
+        color: rgba(255, 255, 255, 0.88) !important;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+    .widget_nav_menu ul li a.footer-link:hover {
+        color: var(--primary-color) !important;
+    }
+</style>
 <!-- footer area end -->

@@ -38,29 +38,171 @@
 <!-- Favicon Icon -->
 <link rel="shortcut icon" href="{{ asset('/assets/images/logos/favicon.webp') }}" type="image/x-icon">
 
-<!-- Flaticon -->
-<link rel="stylesheet" href="{{ asset('/assets/css/flaticon.min.css') }}">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="{{ asset('/assets/css/fontawesome-5.14.0.min.css') }}" onload="this.media='all'">
-<!-- Bootstrap -->
-<link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css') }}" onload="this.media='all'">
-<!-- Nice Select -->
-<link rel="stylesheet" href="{{ asset('/assets/css/nice-select.min.css') }}">
-<!-- Animate -->
-<link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}">
-<!-- Slick -->
-<link rel="stylesheet" href="{{ asset('/assets/css/slick.min.css') }}">
-<!-- Main Style -->
-<link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}" onload="this.media='all'">
-
-<!-- Preconnect to improve google font load -->
+<!-- Preconnect hints for fonts & CDNs -->
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<!-- Preload LCP Hero Image for instant rendering -->
+<link rel="preload" as="image" href="{{ asset('/assets/images/hero/founder.webp') }}" fetchpriority="high">
+
+<!-- Core Layout CSS -->
+<link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
+
+<!-- Non-Blocking Deferred CSS (Icons & Animation Plugins) -->
+<link rel="stylesheet" href="{{ asset('/assets/css/fontawesome-5.14.0.min.css') }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ asset('/assets/css/flaticon.min.css') }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ asset('/assets/css/nice-select.min.css') }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ asset('/assets/css/slick.min.css') }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" media="print" onload="this.media='all'">
 
 <style>
+    /* 💻 LAPTOP DISPLAY SCALING (Ukuran 90% di Laptop 992px - 1439px) */
+    @media (min-width: 992px) and (max-width: 1439px) {
+        html {
+            zoom: 0.9 !important;
+            -webkit-text-size-adjust: 90%;
+        }
+    }
+
+    /* 🖥️ DESKTOP & LAPTOP HEADER LAYOUT (3-Column: Logo Left, Menu Center, Lang Switcher Right) */
+    @media (min-width: 992px) {
+        .header-inner {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            width: 100% !important;
+        }
+
+        .header-inner .logo-outer {
+            flex: 1 1 0% !important;
+            display: flex !important;
+            justify-content: flex-start !important;
+        }
+
+        .header-inner .nav-outer {
+            flex: 0 0 auto !important;
+            display: flex !important;
+            justify-content: center !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .header-inner .lang-switcher {
+            flex: 1 1 0% !important;
+            display: flex !important;
+            justify-content: flex-end !important;
+            margin-left: 0 !important;
+        }
+
+        .main-menu .navbar-collapse > ul.navigation {
+            display: flex !important;
+            gap: 18px !important;
+            align-items: center !important;
+        }
+
+        .main-menu .navbar-collapse > ul.navigation > li {
+            padding-top: 18px !important;
+            padding-bottom: 18px !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .main-menu .navbar-collapse > ul.navigation > li > a {
+            padding: 8px 6px !important;
+            font-size: 15px !important;
+            font-weight: 500 !important;
+            letter-spacing: 0.3px;
+        }
+    }
+
+    /* ⚡ ACCELERATED FADE-IN SCROLL ANIMATIONS (Snappy, fast, & early triggering) */
+    .animated {
+        -webkit-animation-duration: 0.4s !important;
+        animation-duration: 0.4s !important;
+        -webkit-animation-fill-mode: both !important;
+        animation-fill-mode: both !important;
+    }
+
+    .delay-0-1s { -webkit-animation-delay: 0.04s !important; animation-delay: 0.04s !important; }
+    .delay-0-2s { -webkit-animation-delay: 0.08s !important; animation-delay: 0.08s !important; }
+    .delay-0-3s { -webkit-animation-delay: 0.12s !important; animation-delay: 0.12s !important; }
+    .delay-0-4s { -webkit-animation-delay: 0.16s !important; animation-delay: 0.16s !important; }
+    .delay-0-5s { -webkit-animation-delay: 0.20s !important; animation-delay: 0.20s !important; }
+    .delay-0-6s { -webkit-animation-delay: 0.24s !important; animation-delay: 0.24s !important; }
+    .delay-0-7s { -webkit-animation-delay: 0.28s !important; animation-delay: 0.28s !important; }
+    .delay-0-8s { -webkit-animation-delay: 0.32s !important; animation-delay: 0.32s !important; }
+    .delay-1-0s { -webkit-animation-delay: 0.40s !important; animation-delay: 0.40s !important; }
+
+    /* 💎 PREMIUM UNIFORM SKILL CARDS & LOGOS */
+    .skill-item {
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 16px !important;
+        padding: 22px 14px !important;
+        margin-bottom: 24px !important;
+        text-align: center !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+    .skill-item:hover {
+        border-color: var(--primary-color) !important;
+        background: rgba(6, 146, 140, 0.08) !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    .skill-item .icon-box {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 14px;
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .skill-item:hover .icon-box {
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.08);
+    }
+
+    .skill-item .icon-box img {
+        max-width: 100% !important;
+        max-height: 100% !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    .skill-item .skill-name {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        transition: color 0.3s ease;
+    }
+
+    .skill-item:hover .skill-name {
+        color: var(--primary-color);
+    }
+
+    /* 🎯 PRECISE ANCHOR SCROLL OFFSET FOR STICKY HEADER */
+    section[id], div[id] {
+        scroll-margin-top: 80px !important;
+    }
+
     /* GLOBAL MOBILE FIXES */
     @media (max-width: 767px) {
         body {

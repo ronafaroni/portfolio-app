@@ -7,15 +7,15 @@
     <!-- header area end -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="main-hero-area pt-150 pb-80 rel z-1">
+    <section id="home" class="main-hero-area pt-90 pb-80 rel z-1">
         <div class="container container-1620">
             <div class="row align-items-center">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-6">
                     <div class="hero-content rmb-55 wow fadeInUp delay-0-2s">
-                        <h3><span class="text-muted">{{ __('messages.hero_iam') }}</span></h3>
+                        <span class="hero-subtitle d-block mb-2 fs-5 fw-semibold" style="color: #a0a0a0 !important;">{{ __('messages.hero_iam') }}</span>
                         <h1><b>Rona Faroni</b></h1>
-                        <h3>{{ __('messages.hero_job') }}</h3>
+                        <h2 class="hero-job-title" style="font-size: 22px !important; font-weight: 500; color: var(--primary-color) !important; margin-top: 4px; margin-bottom: 12px;">{{ __('messages.hero_job') }}</h2>
                         <p>{{ __('messages.hero_desc') }}</p>
 
                         <div class="hero-btns d-flex align-items-center flex-wrap gap-3 mt-30">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="wow fadeIn delay-0-3s hero-image-wrapper">
-                        <img src="{{ asset('/assets/images/hero/founder.webp') }}" alt="{{ __('messages.alt_author') }}">
+                        <img src="{{ asset('/assets/images/hero/founder.webp') }}" alt="{{ __('messages.alt_author') }}" fetchpriority="high" width="415" height="441">
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
@@ -43,75 +43,75 @@
         </div>
 
         <!-- Client Marquee inside Hero (Aligned with Header Container) -->
-        <div class="container">
-            <div class="hero-client-marquee-wrap mt-70 rmt-40">
-                <div class="text-center mb-25 wow fadeInUp delay-0-2s">
-                    <h6 class="text-muted mb-0" style="font-size: 15px; font-weight: 500; letter-spacing: 0.5px;">{!! __('messages.client_title') !!}</h6>
+        <div class="client-marquee-wrapper pt-25 pb-20 mt-10 wow fadeInUp delay-0-2s">
+            <div class="container">
+                <div class="marquee-title-box mb-10 text-center">
+                    <span class="marquee-sub-title d-inline-block text-center text-white" style="color: #ffffff !important;">{{ __('messages.trusted_by') }}</span>
                 </div>
-                <div class="client-marquee-container wow fadeInUp delay-0-3s" style="padding: 10px 0 10px;">
+                <div class="client-marquee-container" style="padding: 5px 0 5px;">
                     <div class="client-marquee-track">
                         <!-- Set 1 (10 Client Logos) -->
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/bumikartini.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/bumikartini.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}" loading="lazy" width="175" height="39">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}" loading="lazy" width="160" height="45">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" class="logo-sigawai" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" class="logo-sigawai" alt="{{ __('messages.alt_client') }}" loading="lazy" width="143" height="44">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}" loading="lazy" width="150" height="52">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}" loading="lazy" width="190" height="37">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/lakoo.webp') }}" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/lakoo.webp') }}" alt="{{ __('messages.alt_client') }}" loading="lazy" width="150" height="42">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/openflow.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/openflow.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}" loading="lazy" width="150" height="42">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/webelio.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/webelio.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}" loading="lazy" width="160" height="45">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/awshara.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/awshara.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}" loading="lazy" width="160" height="45">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/webstore.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/webstore.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}" loading="lazy" width="160" height="45">
                         </div>
 
                         <!-- Set 2 (Duplicated for Seamless Infinite Loop) -->
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/bumikartini.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/bumikartini.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}" loading="lazy" width="175" height="39">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/techdor.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}" loading="lazy" width="160" height="45">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" class="logo-sigawai" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/sigawai.webp') }}" class="logo-sigawai" alt="{{ __('messages.alt_client') }}" loading="lazy" width="143" height="44">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/spmb.webp') }}" class="logo-wide-lg" alt="{{ __('messages.alt_client') }}" loading="lazy" width="150" height="52">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/bungacoklat.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}" loading="lazy" width="190" height="37">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/lakoo.webp') }}" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/lakoo.webp') }}" alt="{{ __('messages.alt_client') }}" loading="lazy" width="150" height="42">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/openflow.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/openflow.webp') }}" class="logo-boost" alt="{{ __('messages.alt_client') }}" loading="lazy" width="150" height="42">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/webelio.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/webelio.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}" loading="lazy" width="160" height="45">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/awshara.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/awshara.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}" loading="lazy" width="160" height="45">
                         </div>
                         <div class="client-marquee-item">
-                            <img src="{{ asset('/assets/images/client-logos/webstore.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}">
+                            <img src="{{ asset('/assets/images/client-logos/webstore.webp') }}" class="logo-wide-md" alt="{{ __('messages.alt_client') }}" loading="lazy" width="160" height="45">
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
 
     <!-- About Area start -->
     <section id="about" class="about-area rel z-1">
-        <div class="for-bgc-black py-130 rpy-100">
+        <div class="for-bgc-black pt-80 rpt-60 pb-70 rpb-50">
             <div class="container">
                 <div class="row gap-120 align-items-center">
                     <div class="col-lg-7">
@@ -163,12 +163,12 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="about-image-part wow fadeInUp delay-0-3s">
-                            <img src="{{ asset('/assets/images/about/aboutme.webp') }}" alt="{{ __('messages.about_subtitle') }}">
+                        <div class="about-image-part wow fadeInUp delay-0-3s" style="max-width: 380px; margin: 0 auto; padding-left: 0;">
+                            <img src="{{ asset('/assets/images/about/aboutme.webp') }}" alt="{{ __('messages.about_subtitle') }}" loading="lazy" width="380" height="458" style="max-width: 100%; height: auto; border-radius: 20px;">
                             <div class="experience-glass-badge wow fadeInRight delay-0-5s">
                                 <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
                                 <div class="exp-text">
-                                    <h4>{{ __('messages.badge_exp_years') }}</h4>
+                                    <span class="h4 d-block m-0 text-white fw-bold">{{ __('messages.badge_exp_years') }}</span>
                                     <p>{{ __('messages.badge_exp_title') }}</p>
                                 </div>
                             </div>
@@ -190,8 +190,8 @@
     </section>
     <!-- About Area end -->
 
-    <!-- Resume Area start (Interactive Work Experience & Education Timeline) -->
-    <section id="resume" class="resume-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+    <!-- Resume Area start -->
+    <section id="resume" class="resume-area pt-80 rpt-60 pb-70 rpb-50 rel z-1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-10">
@@ -207,7 +207,7 @@
                 <!-- Work Experience Column -->
                 <div class="col-lg-6 wow fadeInUp delay-0-2s">
                     <div class="timeline-header-minimal mb-35">
-                        <h4><i class="far fa-briefcase text-primary me-2"></i> {{ __('messages.experience_title') }}</h4>
+                        <h3><i class="far fa-briefcase text-primary me-2"></i> {{ __('messages.experience_title') }}</h3>
                     </div>
                     <div class="timeline-minimal-list">
                         <!-- Item 1 -->
@@ -217,7 +217,7 @@
                                 <span class="timeline-period">{{ __('messages.exp_1_years') }}</span>
                                 <span class="timeline-org">{{ __('messages.exp_1_company') }}</span>
                             </div>
-                            <h5 class="timeline-role">{{ __('messages.exp_1_role') }}</h5>
+                            <h4 class="timeline-role">{{ __('messages.exp_1_role') }}</h4>
                             <p class="timeline-desc">{{ __('messages.exp_1_desc') }}</p>
                         </div>
                         <!-- Item 2 -->
@@ -227,7 +227,7 @@
                                 <span class="timeline-period">{{ __('messages.exp_2_years') }}</span>
                                 <span class="timeline-org">{{ __('messages.exp_2_company') }}</span>
                             </div>
-                            <h5 class="timeline-role">{{ __('messages.exp_2_role') }}</h5>
+                            <h4 class="timeline-role">{{ __('messages.exp_2_role') }}</h4>
                             <p class="timeline-desc">{{ __('messages.exp_2_desc') }}</p>
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                 <!-- Education & Certifications Column -->
                 <div class="col-lg-6 wow fadeInUp delay-0-4s">
                     <div class="timeline-header-minimal mb-35">
-                        <h4><i class="far fa-graduation-cap text-primary me-2"></i> {{ __('messages.education_title') }}</h4>
+                        <h3><i class="far fa-graduation-cap text-primary me-2"></i> {{ __('messages.education_title') }}</h3>
                     </div>
                     <div class="timeline-minimal-list">
                         <!-- Education -->
@@ -246,7 +246,7 @@
                                 <span class="timeline-period">{{ __('messages.edu_1_years') }}</span>
                                 <span class="timeline-org">{{ __('messages.edu_1_institution') }}</span>
                             </div>
-                            <h5 class="timeline-role">{{ __('messages.edu_1_degree') }}</h5>
+                            <h4 class="timeline-role">{{ __('messages.edu_1_degree') }}</h4>
                             <p class="timeline-desc">{{ __('messages.edu_1_desc') }}</p>
                         </div>
                         <!-- Certificate 1 -->
@@ -256,7 +256,7 @@
                                 <span class="timeline-period">{{ __('messages.edu_2_years') }}</span>
                                 <span class="timeline-org">{{ __('messages.edu_2_institution') }}</span>
                             </div>
-                            <h5 class="timeline-role">{{ __('messages.edu_2_degree') }}</h5>
+                            <h4 class="timeline-role">{{ __('messages.edu_2_degree') }}</h4>
                             <p class="timeline-desc">{{ __('messages.edu_2_desc') }}</p>
                         </div>
                         <!-- Certificate 2 -->
@@ -266,7 +266,7 @@
                                 <span class="timeline-period">{{ __('messages.edu_3_years') }}</span>
                                 <span class="timeline-org">{{ __('messages.edu_3_institution') }}</span>
                             </div>
-                            <h5 class="timeline-role">{{ __('messages.edu_3_degree') }}</h5>
+                            <h4 class="timeline-role">{{ __('messages.edu_3_degree') }}</h4>
                             <p class="timeline-desc">{{ __('messages.edu_3_desc') }}</p>
                         </div>
                     </div>
@@ -284,7 +284,7 @@
     <!-- Resume Area end -->
 
     <!-- Services Area start -->
-    <section id="services" class="services-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+    <section id="services" class="services-area pt-80 rpt-60 pb-70 rpb-50 rel z-1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8">
@@ -305,7 +305,7 @@
                             <span class="service-number-badge">01</span>
                         </div>
                         <div class="service-card-body">
-                            <h4>{{ __('messages.service_1_title') }}</h4>
+                            <h3>{{ __('messages.service_1_title') }}</h3>
                             <p>{{ __('messages.service_1_desc') }}</p>
                         </div>
                     </div>
@@ -320,7 +320,7 @@
                             <span class="service-number-badge">02</span>
                         </div>
                         <div class="service-card-body">
-                            <h4>{{ __('messages.service_2_title') }}</h4>
+                            <h3>{{ __('messages.service_2_title') }}</h3>
                             <p>{{ __('messages.service_2_desc') }}</p>
                         </div>
                     </div>
@@ -335,7 +335,7 @@
                             <span class="service-number-badge">03</span>
                         </div>
                         <div class="service-card-body">
-                            <h4>{{ __('messages.service_3_title') }}</h4>
+                            <h3>{{ __('messages.service_3_title') }}</h3>
                             <p>{{ __('messages.service_3_desc') }}</p>
                         </div>
                     </div>
@@ -350,7 +350,7 @@
                             <span class="service-number-badge">04</span>
                         </div>
                         <div class="service-card-body">
-                            <h4>{{ __('messages.service_4_title') }}</h4>
+                            <h3>{{ __('messages.service_4_title') }}</h3>
                             <p>{{ __('messages.service_4_desc') }}</p>
                         </div>
                     </div>
@@ -365,7 +365,7 @@
                             <span class="service-number-badge">05</span>
                         </div>
                         <div class="service-card-body">
-                            <h4>{{ __('messages.service_5_title') }}</h4>
+                            <h3>{{ __('messages.service_5_title') }}</h3>
                             <p>{{ __('messages.service_5_desc') }}</p>
                         </div>
                     </div>
@@ -380,7 +380,7 @@
                             <span class="service-number-badge">06</span>
                         </div>
                         <div class="service-card-body">
-                            <h4>{{ __('messages.service_6_title') }}</h4>
+                            <h3>{{ __('messages.service_6_title') }}</h3>
                             <p>{{ __('messages.service_6_desc') }}</p>
                         </div>
                     </div>
@@ -399,7 +399,7 @@
 
     <!-- Skill Area start -->
     <section id="skills" class="skill-area rel z-1">
-        <div class="for-bgc-black pt-130 rpt-100 pb-100 rpb-70">
+        <div class="for-bgc-black pt-80 rpt-60 pb-70 rpb-50">
             <div class="container">
                 <div class="row gap-100">
                     <div class="col-lg-5">
@@ -412,58 +412,74 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <div class="skill-items-wrap">
+                        <div class="skill-items-wrap wow fadeInUp delay-0-2s">
                             <div class="row">
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                    <div class="skill-item wow fadeInUp delay-0-2s">
-                                        <img src="{{ asset('/assets/images/skills/laravel.webp') }}" width="43%"
-                                            alt="{{ __('messages.alt_skill') }}">
-                                        <h5>Laravel</h5>
+                                    <div class="skill-item">
+                                        <div class="icon-box">
+                                            <img src="{{ asset('/assets/images/skills/laravel.webp') }}" width="60" height="60"
+                                                alt="{{ __('messages.alt_skill') }}" loading="lazy">
+                                        </div>
+                                        <span class="skill-name">Laravel</span>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                    <div class="skill-item wow fadeInUp delay-0-3s">
-                                        <img src="{{ asset('/assets/images/skills/midtrans.webp') }}" width="42%"
-                                            alt="{{ __('messages.alt_skill') }}">
-                                        <h5>Midtrans</h5>
+                                    <div class="skill-item">
+                                        <div class="icon-box">
+                                            <img src="{{ asset('/assets/images/skills/midtrans.webp') }}" width="60" height="60"
+                                                alt="{{ __('messages.alt_skill') }}" loading="lazy">
+                                        </div>
+                                        <span class="skill-name">Midtrans</span>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                    <div class="skill-item wow fadeInUp delay-0-4s">
-                                        <img src="{{ asset('/assets/images/skills/tailwind.webp') }}" width="68%"
-                                            alt="{{ __('messages.alt_skill') }}">
-                                        <h5>Tailwind</h5>
+                                    <div class="skill-item">
+                                        <div class="icon-box">
+                                            <img src="{{ asset('/assets/images/skills/tailwind.webp') }}" width="60" height="60"
+                                                alt="{{ __('messages.alt_skill') }}" loading="lazy">
+                                        </div>
+                                        <span class="skill-name">Tailwind</span>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                    <div class="skill-item wow fadeInUp delay-0-5s">
-                                        <img src="{{ asset('/assets/images/skills/javascript.webp') }}" width="42%"
-                                            alt="{{ __('messages.alt_skill') }}">
-                                        <h5>Javascript</h5>
+                                    <div class="skill-item">
+                                        <div class="icon-box">
+                                            <img src="{{ asset('/assets/images/skills/javascript.webp') }}" width="60" height="60"
+                                                alt="{{ __('messages.alt_skill') }}" loading="lazy">
+                                        </div>
+                                        <span class="skill-name">Javascript</span>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                    <div class="skill-item wow fadeInUp delay-0-2s">
-                                        <img src="{{ asset('/assets/images/skills/vuejs.webp') }}" width="54%" alt="{{ __('messages.alt_skill') }}">
-                                        <h5>Vue</h5>
+                                    <div class="skill-item">
+                                        <div class="icon-box">
+                                            <img src="{{ asset('/assets/images/skills/vuejs.webp') }}" width="60" height="60" alt="{{ __('messages.alt_skill') }}" loading="lazy">
+                                        </div>
+                                        <span class="skill-name">Vue.js</span>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                    <div class="skill-item wow fadeInUp delay-0-3s">
-                                        <img src="{{ asset('/assets/images/skills/react.webp') }}" width="50%" alt="{{ __('messages.alt_skill') }}">
-                                        <h5>React</h5>
+                                    <div class="skill-item">
+                                        <div class="icon-box">
+                                            <img src="{{ asset('/assets/images/skills/react.webp') }}" width="60" height="60" alt="{{ __('messages.alt_skill') }}" loading="lazy">
+                                        </div>
+                                        <span class="skill-name">React</span>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                    <div class="skill-item wow fadeInUp delay-0-4s">
-                                        <img src="{{ asset('/assets/images/skills/nextjs.webp') }}" width="45%" alt="{{ __('messages.alt_skill') }}">
-                                        <h5>Next Js</h5>
+                                    <div class="skill-item">
+                                        <div class="icon-box">
+                                            <img src="{{ asset('/assets/images/skills/nextjs.webp') }}" width="60" height="60" alt="{{ __('messages.alt_skill') }}" loading="lazy">
+                                        </div>
+                                        <span class="skill-name">Next.js</span>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                    <div class="skill-item wow fadeInUp delay-0-5s">
-                                        <img src="{{ asset('/assets/images/skills/github.webp') }}" width="45%" alt="{{ __('messages.alt_skill') }}">
-                                        <h5>GitHub</h5>
+                                    <div class="skill-item">
+                                        <div class="icon-box">
+                                            <img src="{{ asset('/assets/images/skills/github.webp') }}" width="60" height="60" alt="{{ __('messages.alt_skill') }}" loading="lazy">
+                                        </div>
+                                        <span class="skill-name">GitHub</span>
                                     </div>
                                 </div>
                             </div>
@@ -483,7 +499,7 @@
     <!-- Skill Area end -->
 
     <!-- Projects Area start -->
-    <section id="portfolio" class="projects-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+    <section id="portfolio" class="projects-area pt-80 rpt-60 pb-70 rpb-50 rel z-1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12">
@@ -502,8 +518,7 @@
                                 <div class="project-card-modern">
                                     <div class="image rel">
                                         <span class="project-category-badge">{{ __('messages.proj_1_cat') }}</span>
-                                        <img src="{{ asset('/assets/images/projects/project-1.webp') }}" alt="{{ __('messages.proj_1_title') }}"
-                                            class="project-img-modal cursor-pointer">
+                                        <img src="{{ asset('/assets/images/projects/project-1.webp') }}" alt="{{ __('messages.proj_1_title') }}" loading="lazy">
                                     </div>
                                     <div class="project-card-content px-3 py-3">
                                         <div class="project-tech-tags mb-10">
@@ -511,17 +526,8 @@
                                             <span class="tech-tag">MySQL</span>
                                             <span class="tech-tag">Bootstrap</span>
                                         </div>
-                                        <h5><a href="javascript:void(0)" class="project-img-modal"><b>{{ __('messages.proj_1_title') }}</b></a></h5>
-                                        <p class="text-muted text-small mb-15">{{ __('messages.proj_1_desc') }}</p>
-                                        <div class="project-action-btns d-flex align-items-center justify-content-between">
-                                            <button type="button" class="btn-preview-modal project-img-modal">
-                                                <i class="far fa-eye me-1"></i> {{ __('messages.view_demo') }}
-                                            </button>
-                                            <a href="https://wa.me/6285226118681?text={{ urlencode(sprintf(__('messages.discuss_proj_msg'), __('messages.proj_1_title'))) }}" 
-                                               target="_blank" rel="noopener noreferrer" class="btn-discuss-project">
-                                                <i class="fab fa-whatsapp me-1"></i> {{ __('messages.discuss_project') }}
-                                            </a>
-                                        </div>
+                                        <h3 class="project-title mb-1"><b>{{ __('messages.proj_1_title') }}</b></h3>
+                                        <p class="text-muted text-small mb-0">{{ __('messages.proj_1_desc') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -530,8 +536,7 @@
                                 <div class="project-card-modern">
                                     <div class="image rel">
                                         <span class="project-category-badge">{{ __('messages.proj_2_cat') }}</span>
-                                        <img src="{{ asset('/assets/images/projects/project-2.webp') }}" alt="{{ __('messages.proj_2_title') }}"
-                                            class="project-img-modal cursor-pointer">
+                                        <img src="{{ asset('/assets/images/projects/project-2.webp') }}" alt="{{ __('messages.proj_2_title') }}" loading="lazy">
                                     </div>
                                     <div class="project-card-content px-3 py-3">
                                         <div class="project-tech-tags mb-10">
@@ -539,17 +544,8 @@
                                             <span class="tech-tag">Chart.js</span>
                                             <span class="tech-tag">JavaScript</span>
                                         </div>
-                                        <h5><a href="javascript:void(0)" class="project-img-modal"><b>{{ __('messages.proj_2_title') }}</b></a></h5>
-                                        <p class="text-muted text-small mb-15">{{ __('messages.proj_2_desc') }}</p>
-                                        <div class="project-action-btns d-flex align-items-center justify-content-between">
-                                            <button type="button" class="btn-preview-modal project-img-modal">
-                                                <i class="far fa-eye me-1"></i> {{ __('messages.view_demo') }}
-                                            </button>
-                                            <a href="https://wa.me/6285226118681?text={{ urlencode(sprintf(__('messages.discuss_proj_msg'), __('messages.proj_2_title'))) }}" 
-                                               target="_blank" rel="noopener noreferrer" class="btn-discuss-project">
-                                                <i class="fab fa-whatsapp me-1"></i> {{ __('messages.discuss_project') }}
-                                            </a>
-                                        </div>
+                                        <h3 class="project-title mb-1"><b>{{ __('messages.proj_2_title') }}</b></h3>
+                                        <p class="text-muted text-small mb-0">{{ __('messages.proj_2_desc') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -558,8 +554,7 @@
                                 <div class="project-card-modern">
                                     <div class="image rel">
                                         <span class="project-category-badge">{{ __('messages.proj_3_cat') }}</span>
-                                        <img src="{{ asset('/assets/images/projects/project-3.webp') }}" alt="{{ __('messages.proj_3_title') }}"
-                                            class="project-img-modal cursor-pointer">
+                                        <img src="{{ asset('/assets/images/projects/project-3.webp') }}" alt="{{ __('messages.proj_3_title') }}" loading="lazy">
                                     </div>
                                     <div class="project-card-content px-3 py-3">
                                         <div class="project-tech-tags mb-10">
@@ -567,17 +562,8 @@
                                             <span class="tech-tag">REST API</span>
                                             <span class="tech-tag">MySQL</span>
                                         </div>
-                                        <h5><a href="javascript:void(0)" class="project-img-modal"><b>{{ __('messages.proj_3_title') }}</b></a></h5>
-                                        <p class="text-muted text-small mb-15">{{ __('messages.proj_3_desc') }}</p>
-                                        <div class="project-action-btns d-flex align-items-center justify-content-between">
-                                            <button type="button" class="btn-preview-modal project-img-modal">
-                                                <i class="far fa-eye me-1"></i> {{ __('messages.view_demo') }}
-                                            </button>
-                                            <a href="https://wa.me/6285226118681?text={{ urlencode(sprintf(__('messages.discuss_proj_msg'), __('messages.proj_3_title'))) }}" 
-                                               target="_blank" rel="noopener noreferrer" class="btn-discuss-project">
-                                                <i class="fab fa-whatsapp me-1"></i> {{ __('messages.discuss_project') }}
-                                            </a>
-                                        </div>
+                                        <h3 class="project-title mb-1"><b>{{ __('messages.proj_3_title') }}</b></h3>
+                                        <p class="text-muted text-small mb-0">{{ __('messages.proj_3_desc') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -586,8 +572,7 @@
                                 <div class="project-card-modern">
                                     <div class="image rel">
                                         <span class="project-category-badge">{{ __('messages.proj_4_cat') }}</span>
-                                        <img src="{{ asset('/assets/images/projects/project-4.webp') }}" alt="{{ __('messages.proj_4_title') }}"
-                                            class="project-img-modal cursor-pointer">
+                                        <img src="{{ asset('/assets/images/projects/project-4.webp') }}" alt="{{ __('messages.proj_4_title') }}" loading="lazy">
                                     </div>
                                     <div class="project-card-content px-3 py-3">
                                         <div class="project-tech-tags mb-10">
@@ -595,17 +580,8 @@
                                             <span class="tech-tag">Midtrans</span>
                                             <span class="tech-tag">Tailwind</span>
                                         </div>
-                                        <h5><a href="javascript:void(0)" class="project-img-modal"><b>{{ __('messages.proj_4_title') }}</b></a></h5>
-                                        <p class="text-muted text-small mb-15">{{ __('messages.proj_4_desc') }}</p>
-                                        <div class="project-action-btns d-flex align-items-center justify-content-between">
-                                            <button type="button" class="btn-preview-modal project-img-modal">
-                                                <i class="far fa-eye me-1"></i> {{ __('messages.view_demo') }}
-                                            </button>
-                                            <a href="https://wa.me/6285226118681?text={{ urlencode(sprintf(__('messages.discuss_proj_msg'), __('messages.proj_4_title'))) }}" 
-                                               target="_blank" rel="noopener noreferrer" class="btn-discuss-project">
-                                                <i class="fab fa-whatsapp me-1"></i> {{ __('messages.discuss_project') }}
-                                            </a>
-                                        </div>
+                                        <h3 class="project-title mb-1"><b>{{ __('messages.proj_4_title') }}</b></h3>
+                                        <p class="text-muted text-small mb-0">{{ __('messages.proj_4_desc') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -628,29 +604,29 @@
 
 
     <!-- FAQs Area start -->
-    <section id="faqs" class="faqs-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+    <section id="faqs" class="faqs-area pt-80 rpt-60 pb-70 rpb-50 rel z-1 wow fadeIn delay-0-1s">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="faq-single-image-wrap rmb-55 wow fadeInUp delay-0-2s">
+                    <div class="faq-single-image-wrap rmb-55">
                         <div class="faq-single-image-card">
-                            <img src="{{ asset('/assets/images/about/cta1.webp') }}" alt="{{ __('messages.alt_faq') }}">
+                            <img src="{{ asset('/assets/images/about/cta1.webp') }}" alt="{{ __('messages.alt_faq') }}" loading="lazy" width="478" height="512">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="faq-content-part rel z-2">
-                        <div class="section-title mb-40 wow fadeInUp delay-0-4s">
+                        <div class="section-title mb-40">
                             <h2>{!! __('messages.faq_title') !!}</h2>
                         </div>
-                        <div class="accordion wow fadeInUp delay-0-4s" id="faq-accordion">
+                        <div class="accordion" id="faq-accordion">
                             <div class="accordion-item">
-                                <h5 class="accordion-header">
+                                <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="false">
                                         {{ __('messages.q1') }}
                                     </button>
-                                </h5>
+                                </h3>
                                 <div id="collapseOne" class="accordion-collapse collapse"
                                     data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
@@ -659,12 +635,12 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h5 class="accordion-header">
+                                <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false">
                                         {{ __('messages.q2') }}
                                     </button>
-                                </h5>
+                                </h3>
                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
                                         <p>{{ __('messages.a2') }}</p>
@@ -672,12 +648,12 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h5 class="accordion-header">
+                                <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree">
                                         {{ __('messages.q3') }}
                                     </button>
-                                </h5>
+                                </h3>
                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
                                         <p>{{ __('messages.a3') }}</p>
@@ -685,12 +661,12 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h5 class="accordion-header">
+                                <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour">
                                         {{ __('messages.q4') }}
                                     </button>
-                                </h5>
+                                </h3>
                                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
                                         <p>{{ __('messages.a4') }}</p>
@@ -698,12 +674,12 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h5 class="accordion-header">
+                                <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive">
                                         {{ __('messages.q5') }}
                                     </button>
-                                </h5>
+                                </h3>
                                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                                     <div class="accordion-body">
                                         <p>{{ __('messages.a5') }}</p>
@@ -727,11 +703,11 @@
 
 
     <!-- Contact Area start -->
-    <section id="contact" class="contact-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+    <section id="contact" class="contact-area pt-80 rpt-60 pb-70 rpb-50 rel z-1 wow fadeIn delay-0-1s">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <div class="contact-content-part pt-5 rpt-0 rmb-55 wow fadeInUp delay-0-2s">
+                    <div class="contact-content-part pt-0 rmb-55">
                         <div class="section-title mb-40">
                             <span class="sub-title mb-15">{{ __('messages.contact_subtitle') }}</span>
                             <h2>{!! __('messages.contact_title') !!}</h2>
@@ -745,7 +721,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="contact-form contact-form-wrap form-style-one wow fadeInUp delay-0-4s">
+                    <div class="contact-form contact-form-wrap form-style-one">
                         <form id="contactForm" class="contactForm" onsubmit="sendToWhatsApp(event)">
                             @csrf
                             <div class="row">
@@ -798,11 +774,6 @@
     <!-- footer area -->
     @include('frontend.includes.footers.footer')
     <!-- footer area end -->
-    <!-- Full Screen Image Modal -->
-    <div id="fullScreenModal" class="full-screen-modal">
-        <span class="close-modal">&times;</span>
-        <img class="full-screen-content" id="imgFull">
-    </div>
 
     <!-- Swiper and Modal CSS -->
     <style>
@@ -836,33 +807,49 @@
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
         }
 
-        /* 1. Full Solid Color Button */
+        /* 1. Full Solid Color Button (High Contrast: Dark Text on Primary Teal) */
         .theme-btn.theme-btn-solid,
         a.theme-btn.theme-btn-solid {
             background: var(--primary-color) !important;
             border: 1.5px solid var(--primary-color) !important;
-            color: #ffffff !important;
-            box-shadow: 0 4px 14px rgba(6, 146, 140, 0.3) !important;
+            color: #000000 !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 14px rgba(6, 146, 140, 0.35) !important;
         }
 
         .theme-btn.theme-btn-solid i,
-        a.theme-btn.theme-btn-solid i {
-            color: #ffffff !important;
+        a.theme-btn.theme-btn-solid i,
+        .theme-btn.theme-btn-solid span,
+        a.theme-btn.theme-btn-solid span {
+            color: #000000 !important;
+            font-weight: 700 !important;
             transition: transform 0.3s ease !important;
         }
 
         .theme-btn.theme-btn-solid:hover,
         a.theme-btn.theme-btn-solid:hover {
-            background: #057d78 !important;
-            border-color: #057d78 !important;
-            color: #ffffff !important;
+            background: #07c7bf !important;
+            border-color: #07c7bf !important;
+            color: #000000 !important;
             transform: translateY(-2px) !important;
-            box-shadow: 0 6px 20px rgba(6, 146, 140, 0.45) !important;
+            box-shadow: 0 6px 20px rgba(6, 146, 140, 0.5) !important;
         }
 
         .theme-btn.theme-btn-solid:hover i,
         a.theme-btn.theme-btn-solid:hover i {
             transform: translateX(3px) !important;
+        }
+
+        /* High Contrast Sub-Titles and Muted Text */
+        .sub-title,
+        .section-title .sub-title,
+        .marquee-sub-title {
+            color: var(--primary-color) !important;
+            font-weight: 600 !important;
+        }
+
+        .text-muted {
+            color: rgba(255, 255, 255, 0.82) !important;
         }
 
         /* 2. Line / Outline Button with Themed Icon */
@@ -1412,13 +1399,35 @@
             border: 1px solid rgba(6, 146, 140, 0.2);
         }
 
-        .project-card-content h5 a {
-            color: #fff;
-            transition: 0.2s;
+        .project-card-content h3,
+        .project-card-content .project-title {
+            font-size: 18px !important;
+            line-height: 1.35 !important;
+            margin-top: 10px !important;
+            margin-bottom: 6px !important;
         }
 
-        .project-card-content h5 a:hover {
-            color: var(--primary-color);
+        .project-card-content h3 a,
+        .project-card-content .project-title a {
+            color: #ffffff !important;
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            letter-spacing: -0.2px;
+            transition: color 0.25s ease !important;
+        }
+
+        .project-card-content h3 a:hover,
+        .project-card-content .project-title a:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .project-card-content p.text-small {
+            font-size: 13.5px !important;
+            font-weight: 400 !important;
+            color: rgba(255, 255, 255, 0.65) !important;
+            line-height: 1.55 !important;
+            margin-top: 4px !important;
+            margin-bottom: 0 !important;
         }
 
         .project-action-btns {
@@ -1708,6 +1717,7 @@
                 autoplay: {
                     delay: 3000,
                     disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
                 },
                 pagination: {
                     el: '.project-swiper-pagination',
@@ -1719,33 +1729,6 @@
                     1024: { slidesPerView: 3 },
                 }
             });
-
-            // Modal Logic
-            const modal = document.getElementById("fullScreenModal");
-            const modalImg = document.getElementById("imgFull");
-            const images = document.querySelectorAll(".project-img-modal");
-            const closeBtn = document.querySelector(".close-modal");
-
-            images.forEach(img => {
-                img.onclick = function () {
-                    modal.style.display = "flex";
-                    modal.style.alignItems = "center";
-                    modalImg.src = this.src;
-                    document.body.style.overflow = "hidden"; // Disable scroll
-                }
-            });
-
-            closeBtn.onclick = function () {
-                modal.style.display = "none";
-                document.body.style.overflow = "auto"; // Enable scroll
-            }
-
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                    document.body.style.overflow = "auto";
-                }
-            }
         });
     </script>
 @endsection

@@ -8,6 +8,7 @@ return [
     'services' => 'Services',
     'skills' => 'Skills',
     'portfolio' => 'Portfolio',
+    'faq' => 'FAQ',
     'contact' => 'Contact',
 
     // Hero Section
@@ -100,6 +101,7 @@ return [
     'send_message' => 'Send Message via WhatsApp',
 
     // Client Section
+    'trusted_by' => 'Featured Products & Applications',
     'client_title' => 'Trusted by <span>Leading Brands & Businesses</span>',
 
     // Footer
